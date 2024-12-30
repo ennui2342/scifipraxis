@@ -2,13 +2,15 @@
 publish: true
 title: 2024-09-06 The World of Null-A
 excerpt: 📚 The World of Null-A  ✒️ A. E. Van Vogt  (1948) ✨ 1/5  🛸 Golden age 🖌️ Bruce Pennington
-header: '{"og_image","/assets/blah.jpg"}'
+header: '{"og_image","/assets/the world of null-a.png"}'
 author: A. E. Van Vogt
 rating: 1/5
 theme: Golden age
 artist: Bruce Pennington
 year: "1948"
 ---
+![the world of null-a.png](../assets/the-world-of-null-a.png)
+
 📚 The World of Null-A  ✒️ A. E. Van Vogt (1948)  ✨ 1/5  🛸 Golden age 🖌️ Bruce Pennington
   
 As this is a 1940s book, it's only fair to make allowances - this is regarded as a classic of its time. A golden age novel is going to have some very dated science (atomic flashlights!), and like many stories of the time, this is one about a hero who overcomes all odds with his superior intelligence, vanquishing mercilessly the inferior henchmen and aliens who stand in his way.  
