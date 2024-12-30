@@ -10,7 +10,7 @@ artist: Bruce Pennington
 year: "1948"
 writer: A. E. Van Vogt
 ---
-![the world of null-a.png](../assets/the-world-of-null-a.png)
+![the world of null-a.png](/assets/the-world-of-null-a.png)
 
 📚 The World of Null-A  ✒️ A. E. Van Vogt (1948)  ✨ 1/5  🛸 Golden age 🖌️ Bruce Pennington
   
