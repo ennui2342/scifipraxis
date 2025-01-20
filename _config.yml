@@ -19,12 +19,12 @@ locale                   : "en-GB"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "scifipraxi books reviews"
 title_separator          : "-"
-subtitle                 : #
+subtitle                 : "Reviewing modern and vintage Science Fiction as I slowly make my way through my TBR."
 name                     : "Mark Cheverton"
 description              : "Reviewing modern and vintage Science Fiction as I slowly make my way through my TBR."
 url                      : "https://scifipraxis.ecafe.org"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "ennui2342/scifipraxis"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -95,13 +95,14 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/avatar2.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://instagram.com/scifipraxis"
 
 # Analytics
 analytics:
@@ -113,11 +114,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Mark Cheverton"
+  avatar           : /assets/images/avatar2.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Reader, writer, collector."
+  location         : "Cambridge, UK"
+  email            : mark.cheverton@ecafe.org
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -136,7 +137,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/scifipraxis"
 
 # Site Footer
 footer:
@@ -158,7 +159,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/scifipraxis"
 
 
 # Reading Files
