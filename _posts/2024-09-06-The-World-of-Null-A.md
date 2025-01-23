@@ -2,7 +2,7 @@
 publish: true
 title: 2024-09-06 The World of Null-A
 excerpt: 📚 The World of Null-A  ✒️ A. E. Van Vogt  (1948) ✨ 1/5  🛸 Golden age 🖌️ Bruce Pennington
-header: '{"og_image","/assets/the world of null-a.png"}'
+header: '{"og_image","/assets/the-world-of-null-a.png"}'
 rating: 1/5
 theme: Golden age
 artist: Bruce Pennington
@@ -10,8 +10,6 @@ year: "1948"
 writer: A. E. Van Vogt
 cover: the world of null-a.png
 ---
-📚 The World of Null-A  ✒️ A. E. Van Vogt (1948)  ✨ 1/5  🛸 Golden age 🖌️ Bruce Pennington
-  
 As this is a 1940s book, it's only fair to make allowances - this is regarded as a classic of its time. A golden age novel is going to have some very dated science (atomic flashlights!), and like many stories of the time, this is one about a hero who overcomes all odds with his superior intelligence, vanquishing mercilessly the inferior henchmen and aliens who stand in his way.  
   
 There's a promising start with a city-wide suspension of policing while 'the games' are on (sounds familiar), but this plot is quickly dropped, and by halfway, we have been introduced to a handful of characters, and I'm seriously confused as to what's going on. Our hero seems to alternate being caught and escaping every chapter. Meanwhile, who's on what side, and even what those sides are, seems to be a fluid concept. Each capture seems to be an excuse for our cast of characters to troop in to deliver some confusing exposition, triggering me to repeatedly scan back through the book to try and get things straight, before one of them helps our hero escape.   
