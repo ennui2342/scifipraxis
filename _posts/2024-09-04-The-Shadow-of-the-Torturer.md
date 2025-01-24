@@ -7,7 +7,7 @@ theme: Dying earth fantasy
 artist: Bruce Pennington
 year: "1980"
 writer: Gene Wolfe
-cover: the-shadow-of-the-torturer.png
+cover: "[[assets/the-shadow-of-the-torturer.png]]"
 header:
   teaser: "[[assets/the-shadow-of-the-torturer.png]]"
 ---
