@@ -7,7 +7,7 @@ theme: Golden Age
 artist: Bruce Pennington
 year: "1948"
 writer: A. E. Van Vogt
-cover: the-world-of-null-a.png
+cover: "[[assets/the-world-of-null-a.png]]"
 ---
 As this is a 1940s book, it's only fair to make allowances - this is regarded as a classic of its time. A golden age novel is going to have some very dated science (atomic flashlights!), and like many stories of the time, this is one about a hero who overcomes all odds with his superior intelligence, vanquishing mercilessly the inferior henchmen and aliens who stand in his way.  
   
