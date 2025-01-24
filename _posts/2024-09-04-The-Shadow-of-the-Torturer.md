@@ -8,7 +8,7 @@ theme: Dying earth fantasy
 artist: Bruce Pennington
 year: "1980"
 writer: Gene Wolfe
-cover: the-shadow-of-the-torturer.png
+cover: assets/the-shadow-of-the-torturer.png
 ---
 A book of two halves for me. The first half sets up the protagonist as a slightly insane apprentice torturer along with a couple of promising plotlines around an aristocratic client and a swashbuckling rebel. The citadel in which the torturers practice their art is also as much a character in this early part, reminiscent of Ghormanghast and replete with mystery and strange characters to explore.  
   
