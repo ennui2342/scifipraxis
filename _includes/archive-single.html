@@ -25,11 +25,6 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
-                  <div class="archive-item-excerpt">
-                          ✒️  {{ page.writer }}</br>
-                          🛸 {{ page.theme }}</br>
-                          🖌️ {{ page.artist }}</br>
-                          ✨ <span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span></br>
-                  </div>    
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | truncate: 160 | markdownify }}</p>{% endif %}
   </article>
 </div>
