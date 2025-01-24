@@ -2,7 +2,6 @@
 publish: true
 title: The Shadow of the Torturer
 excerpt: 📚 The Shadow of the Torturer ✒️ Gene Wolfe ✨ 3/5 🛸 Dying earth fantasy 🖌️ Bruce Pennington
-header: '{"image","/assets/the-shadow-of-the-torturer.png"}'
 stars: "3"
 theme: Dying earth fantasy
 artist: Bruce Pennington
