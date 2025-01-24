@@ -1,11 +1,7 @@
 ---
 publish: true
 title: The Shadow of the Torturer
-excerpt: |
-  ✒️ Gene Wolfe  
-  ✨ 3/5  
-  🛸 Dying earth fantasy  
-  🖌️ Bruce Pennington
+excerpt: 📚 The Shadow of the Torturer ✒️ Gene Wolfe ✨ 3/5 🛸 Dying earth fantasy 🖌️ Bruce Pennington
 stars: "3"
 theme: Dying earth fantasy
 artist: Bruce Pennington
@@ -14,7 +10,6 @@ writer: Gene Wolfe
 cover: the-shadow-of-the-torturer.png
 header:
   teaser: /assets/the-shadow-of-the-torturer.png
-instagram: 📚 The Shadow of the Torturer ✒️ Gene Wolfe ✨ 3/5 🛸 Dying earth fantasy 🖌️ Bruce Pennington
 ---
 A book of two halves for me. The first half sets up the protagonist as a slightly insane apprentice torturer along with a couple of promising plotlines around an aristocratic client and a swashbuckling rebel. The citadel in which the torturers practice their art is also as much a character in this early part, reminiscent of Ghormanghast and replete with mystery and strange characters to explore.  
   
