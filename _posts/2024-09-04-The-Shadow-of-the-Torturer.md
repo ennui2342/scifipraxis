@@ -3,7 +3,9 @@ publish: true
 title: The Shadow of the Torturer
 excerpt: 📚 The Shadow of the Torturer ✒️ Gene Wolfe (1980) ✨ 3/5 🛸 Dying earth fantasy 🖌️ Bruce Pennington
 stars: 3
-theme: Dying earth fantasy
+categories:
+  - Fantasy
+  - Dying Earth
 artist: Bruce Pennington
 year: 1980
 writer: Gene Wolfe
