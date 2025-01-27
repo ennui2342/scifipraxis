@@ -3,7 +3,9 @@ publish: true
 title: A Memory Called Empire
 excerpt: 📚 A Memory Called Empire ✒️ Arkady Martine (2019) ✨ 5/5 🛸 Political space opera 🖌️ Jamie Jones
 stars: 5
-theme: Political space opera
+tags:
+  - Political
+  - Space_Opera
 artist: Jamie Jones
 year: 2019
 writer: Arkady Martine

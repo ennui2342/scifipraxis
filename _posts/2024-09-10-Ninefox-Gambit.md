@@ -3,7 +3,8 @@ publish: true
 title: Ninefox Gambit
 excerpt: 📚 Ninefox Gambit ✒️ Yoon Ha Lee (2016) ✨ 3/5 🛸 Military SF 🖌️ Chris Moore
 stars: 3
-theme: Military SF
+tags:
+  - Military_SF
 artist: Chris Moore
 year: 2016
 writer: Yoon Ha Lee

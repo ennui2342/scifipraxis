@@ -3,7 +3,8 @@ publish: true
 title: Lord of Light
 excerpt: 📚 Lord of Light  ✒️ Roger Zelazny (1967) ✨ 3/5  🛸 Science fantasy  🖌️ Fred Gambino
 stars: 3
-theme: Science fantasy
+tags:
+  - Science_Fantasy
 artist: Fred Gambino
 year: 1967
 writer: Roger Zelazny

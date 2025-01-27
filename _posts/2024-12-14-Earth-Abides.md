@@ -3,7 +3,8 @@ publish: true
 title: Earth Abides
 excerpt: 📚 Earth Abides ✒️ George R. Stewart (1949) ✨ 3/5 🛸 Post-apocalyptic 🖌️ Uncredited
 stars: 3
-theme: Post-apocalyptic
+tags:
+  - Post-apocalyptic
 artist: Uncredited
 year: 1949
 writer: George R. Stewart

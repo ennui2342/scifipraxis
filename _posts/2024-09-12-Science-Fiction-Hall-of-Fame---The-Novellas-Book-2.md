@@ -3,7 +3,8 @@ publish: true
 title: Science Fiction Hall of Fame - The Novellas Book 2
 excerpt: 📚 Science Fiction Hall of Fame - The Novellas Book 2  ✒️ Edited by Ben Bova (1975) ✨ 3/5  🛸 Anthology  🖌️ Eddie Jones
 stars: 3
-theme: Anthology
+tags:
+  - Anthology
 artist: Eddie Jones
 year: 1975
 writer: Ben Bova

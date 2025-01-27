@@ -3,7 +3,8 @@ publish: true
 title: The Book of Skulls
 excerpt: 📚 The Book of Skulls ✒️ Robert Silverberg (1972)  ✨ 4/5 🛸 Psychological horror 🖌️ Uncredited
 stars: 4
-theme: Psychological horror
+tags:
+  - Psychological_Horror
 artist: Uncredited
 year: 1972
 writer: Robert Silverberg

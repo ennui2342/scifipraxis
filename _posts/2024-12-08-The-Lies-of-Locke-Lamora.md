@@ -3,7 +3,9 @@ publish: true
 title: The Lies of Locke Lamora
 excerpt: 📚 The Lies of Locke Lamora ✒️ Scott Lynch (2006) ✨ 3/5 🛸 Swashbuckling low fantasy 🖌️ Benjamin Carré
 stars: 3
-theme: Swashbuckling low fantasy
+tags:
+  - Low_Fantasy
+  - Swashbuckling
 artist: Benjamin Carré
 year: 2006
 writer: Scott Lynch

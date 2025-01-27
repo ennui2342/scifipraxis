@@ -3,7 +3,8 @@ publish: true
 title: Bridging Infinity
 excerpt: 📚 Bridging Infinity✒️ Jonathan Strahan (2016) ✨ 2/5 🛸 Anthology 🖌️ Adam Tredowski
 stars: 2
-theme: Anthology
+tags:
+  - Anthology
 artist: Adam Tredowski
 year: 2016
 writer: Jonathan Strahan

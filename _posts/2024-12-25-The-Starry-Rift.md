@@ -3,7 +3,9 @@ publish: true
 title: The Starry Rift
 excerpt: 📚 The Starry Rift✒️ James Tiptree Jr. (1986) ✨ 2/5 🛸 Frontier space opera 🖌️ Uncredited
 stars: 2
-theme: Frontier space opera
+tags:
+  - Frontier
+  - Space_Opera
 artist: Uncredited
 year: 1986
 writer: James Tiptree Jr.

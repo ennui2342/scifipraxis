@@ -3,7 +3,9 @@ publish: true
 title: Dangerous Visions 1
 excerpt: 📚 Dangerous Visions 1 ✒️ Harlan Ellison (1967) ✨ 2/5 🛸 New wave anthology 🖌️ Joe Petagno
 stars: 2
-theme: New wave anthology
+tags:
+  - New_Wave
+  - Anthology
 artist: Joe Petagno
 year: 1967
 writer: Harlan Ellison

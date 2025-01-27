@@ -3,7 +3,8 @@ publish: true
 title: Orbitsville
 excerpt: 📚 Orbitsville✒️ Bob Shaw (1975) ✨ 3/5 🛸 Big dumb object 🖌️ Colin Hay
 stars: 3
-theme: Big dumb object
+tags:
+  - Big_Dumb_Object
 artist: Colin Hay
 year: 1975
 writer: Bob Shaw

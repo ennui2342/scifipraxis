@@ -3,7 +3,9 @@ publish: true
 title: Planetfall
 excerpt: 📚 Planetfall ✒️ Emma Newman (2015) ✨ 5/5 🛸 Frontier colony 🖌️  Adam Auerbach
 stars: 5
-theme: Frontier colony
+tags:
+  - Frontier
+  - Colonisation
 artist: Adam Auerbach
 year: 2015
 writer: Emma Newman

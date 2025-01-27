@@ -3,7 +3,8 @@ publish: true
 title: Four For the Future
 excerpt: 📚 Four For the Future ✒️ Edited by Harry Harrison (1969) ✨ 2/5 🛸 Original themed anthology 🖌️ Patrick Woodroffe 😍😍😍
 stars: 2
-theme: Original themed anthology
+tags:
+  - Anthology
 artist: Patrick Woodroffe
 year: 1969
 writer: Harry Harrison

@@ -3,7 +3,8 @@ publish: true
 title: Echopraxia
 excerpt: 📚 Echopraxia ✒️ Peter Watts (2014) ✨ 4/5 🛸 The singularity 🖌️ Uncredited
 stars: 4
-theme: The singularity
+tags:
+  - The_Singularity
 artist: Uncredited
 year: 2014
 writer: Peter Watts

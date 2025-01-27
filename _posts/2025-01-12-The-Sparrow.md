@@ -3,7 +3,8 @@ publish: true
 title: The Sparrow
 excerpt: 📚 The Sparrow✒️ Mary Doria Russell (1996) ✨ 2/5 🛸 First contact 🖌️ A. Morton
 stars: 2
-theme: First contact
+tags:
+  - First_Contact
 artist: A. Morton
 year: 1996
 writer: Mary Doria Russell
