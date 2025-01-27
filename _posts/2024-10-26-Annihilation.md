@@ -3,7 +3,8 @@ publish: true
 title: Annihilation
 excerpt: 📚 Annihilation ✒️ Jeff Vandermeer (2014) ✨ 4/5 🛸 Cosmic Horror 🖌️ Rodrigo Corral and Tyler Comrie
 stars: 4
-theme: Cosmic Horror
+tags:
+  - Cosmic_Horror
 artist: Rodrigo Corral and Tyler Comrie
 year: 2014
 writer: Jeff Vandermeer
