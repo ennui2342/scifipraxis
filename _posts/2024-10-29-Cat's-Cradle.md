@@ -3,7 +3,9 @@ publish: true
 title: Cat's cradle
 excerpt: 📚 Cat's cradle ✒️ Kurt Vonnegut (1963)  ✨ 5/5 🛸 End of the world satire  🖌️ Julian House
 stars: 5
-theme: End of the world satire
+tags:
+  - Satire
+  - Apocolypse
 artist: Julian House
 year: 1963
 writer: Kurt Vonnegut
