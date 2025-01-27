@@ -12,7 +12,7 @@ writer: Gene Wolfe
 cover: the-shadow-of-the-torturer.png
 ---
 A book of two halves for me. The first half sets up the protagonist as a slightly insane apprentice torturer along with a couple of promising plotlines around an aristocratic client and a swashbuckling rebel. The citadel in which the torturers practice their art is also as much a character in this early part, reminiscent of Ghormanghast and replete with mystery and strange characters to explore.  
-  
+
 All too soon, our anti-hero must leave the citadel and venture out into the wider city, and this is where the book lost me. The prose became quickly weighed down by so many ancient terms that I was consulting a dictionary app several times a paragraph. Maybe it's my lack of experience with the fantasy genre, but I found it challenging to figure out what were neologisms and what was just my ignorance of ancient military terms, clothing, architecture etc (hipparch, peltast, landsknecht, chiliarch to just name a few military ranks). God knows what people did when it was published.  
   
 Meanwhile, our character seems to instantly fall in love with any woman he spends more than a few hours with and they spend much of the story partly naked and lusting after the torturer! If this is an attempt to write an adolescent boy's view of women and love then it succeeds, but it wasn't particularly rewarding to read.  
