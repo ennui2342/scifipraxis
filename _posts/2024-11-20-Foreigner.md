@@ -3,7 +3,9 @@ publish: true
 title: Foreigner
 excerpt: 📚 Foreigner ✒️ C. J. Cherryh (1994) ✨ 5/5 🛸 First contact 🖌️ Michael Whelan
 stars: 5
-theme: First contact
+tags:
+  - First_Contact
+  - Political
 artist: Michael Whelan
 year: 1994
 writer: C. J. Cherryh
