@@ -3,7 +3,9 @@ publish: true
 title: Klara and the Sun
 excerpt: 📚 Klara and the Sun ✒️ Kazuo Ishiguro (2021) ✨ 3/5 🛸 Robots and AI
 stars: 3
-theme: Robots and AI
+tags:
+  - Robots
+  - AI
 artist: Uncredited
 year: 2021
 writer: Kazuo Ishiguro
