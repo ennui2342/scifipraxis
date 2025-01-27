@@ -34,7 +34,7 @@
 		  <div class="archive__item-excerpt">
 <p>
 			  ✒️  {{ post.writer }}</br>
-			  🛸 {{ post.theme }}</br>
+			  🛸 {{ post.tags | join: ", " | replace: '_', ' ' }}</br>
 			  🖌️ {{ post.artist }}</br>
 			  ✨ <span class="stars-container stars-{{ post.stars | times:20 | round: 0 }}" title="{{ post.stars }}/5">★★★★★</span></br>
 </p>
