@@ -2,10 +2,10 @@
 publish: true
 title: The World of Null-A
 excerpt: 📚 The World of Null-A  ✒️ A. E. Van Vogt  (1948) ✨ 1/5  🛸 Golden age 🖌️ Bruce Pennington
-stars: "1"
-theme: Golden Age
+stars: 1
+theme: Golden age
 artist: Bruce Pennington
-year: "1948"
+year: 1948
 writer: A. E. Van Vogt
 cover: the-world-of-null-a.png
 ---
