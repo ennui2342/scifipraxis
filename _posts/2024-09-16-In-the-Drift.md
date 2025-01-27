@@ -3,7 +3,8 @@ publish: true
 title: In the Drift
 excerpt: 📚 In the Drift ✒️ Michael Swanwick (1985) ✨ 4/5 🛸 Post-apocalyptic 🖌️ Ron Lieberman
 stars: 4
-theme: Post-apocalyptic
+tags:
+  - Post-apocalyptic
 artist: Ron Lieberman
 year: 1985
 writer: Michael Swanwick
