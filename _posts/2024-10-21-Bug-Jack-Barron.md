@@ -3,7 +3,8 @@ publish: true
 title: Bug Jack Barron
 excerpt: 📚 Bug Jack Barron ✒️ Norman Spinrad (1969) ✨ 2/5 🛸 New wave 🖌️ Geoff Taylor
 stars: 2
-theme: New wave
+tags:
+  - New_Wave
 artist: Geoff Taylor
 year: 1969
 writer: Norman Spinrad
