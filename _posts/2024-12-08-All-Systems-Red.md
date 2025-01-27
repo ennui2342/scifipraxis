@@ -3,7 +3,9 @@ publish: true
 title: All Systems Red
 excerpt: 📚 All Systems Red ✒️ Martha Wells (2017) ✨ 5/5 🛸 Character driven space opera 🖌️ Jaime Jones
 stars: 5
-theme: Character driven space opera
+tags:
+  - Space_Opera
+  - Political
 artist: Jaime Jones
 year: 2017
 writer: Martha Wells
