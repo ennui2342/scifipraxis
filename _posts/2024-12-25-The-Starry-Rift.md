@@ -11,7 +11,7 @@ year: 1986
 writer: James Tiptree Jr.
 cover: the-starry-rift.png
 header:
-  image: the-starry-rift.png
+  image: /assets/the-starry-rift.png
 ---
 A composite novel featuring three linked stories set at humanity's galactic borderland. This was a disappointing first Tiptree read for me having expected better. The SF encyclopedia says her best work was in the 70s so maybe I just started in the wrong place.   
   
