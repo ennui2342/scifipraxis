@@ -51,7 +51,7 @@ layout: default
           <div class="book_info">
 		  {% if page.cover %}<div class="book_cover"><a href="{{ page.book-link }}" target="_blank"><img src="/assets/{{ page.cover }}" alt="Book cover for {{ page.title }}" /></a></div>{% endif %}
 		  <div class="book_meta">
-			  ✒️  {{ page.writer }}</br>
+			  ✒️  {{ page.writer }} ({{ page.year }})</br>
 			  🛸 {{ page.tags | join: ", " | replace: '_', ' ' }}</br>
 			  🖌️ {{ page.artist }}</br>
 			  ✨ <span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span></p>
