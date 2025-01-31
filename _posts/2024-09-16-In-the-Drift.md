@@ -10,7 +10,7 @@ year: 1985
 writer: Michael Swanwick
 cover: in-the-drift.png
 header:
-  image: /assets/in-the-drift.png
+  og_image: /assets/in-the-drift.png
 ---
 Swanwick's alternate history where the three-mile island disaster creates the Drift - a nuclear wasteland home to an abandoned population in post-collapse America. A balkanised society is rebuilt amongst the radiation, seeking autonomy while being squeezed on all sides.  
   
