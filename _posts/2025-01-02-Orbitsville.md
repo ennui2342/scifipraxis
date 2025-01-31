@@ -10,7 +10,7 @@ year: 1975
 writer: Bob Shaw
 cover: orbitsville.png
 header:
-  image: orbitsville.png
+  image: /assets/orbitsville.png
 ---
 With Ringwold and Rama kicking off the 70s, Shaw joins the party with his Big Dumb Object - Orbitsville - a Dyson sphere with a surface area of five billion Earths.  
   
