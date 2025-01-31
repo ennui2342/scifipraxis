@@ -10,7 +10,7 @@ year: 1969
 writer: Harry Harrison
 cover: four-for-the-future.png
 header:
-  image: /assets/four-for-the-future.png
+  og_image: /assets/four-for-the-future.png
 ---
 The Circulation of the Blood... by Brian W. Aldiss (1966) ⭐  
 I don't know if Aldiss was deliberately writing a condescending protagonist in an abusive relationship, but he succeeded. The story was thin, consisting mostly of pontificating and a cringeworthy adultery plot which entirely failed to prop up the philosophical rationale of the story.  
