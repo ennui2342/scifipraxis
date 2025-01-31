@@ -9,6 +9,8 @@ artist: Eddie Jones
 year: 1975
 writer: Ben Bova
 cover: science-fiction-hall-of-fame-the-novellas-book-2.png
+header:
+  image: science-fiction-hall-of-fame-the-novellas-book-2.png
 ---
 An anthology recognising four pre-nebula novellas as voted by the Science Fiction Writers of America. Great cover art by Eddie Jones!  
   

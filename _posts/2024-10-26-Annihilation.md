@@ -9,6 +9,8 @@ artist: Rodrigo Corral and Tyler Comrie
 year: 2014
 writer: Jeff Vandermeer
 cover: annihilation.png
+header:
+  image: annihilation.png
 ---
 As we follow the small expedition into Area X, Vandermeer builds tension and a sense of dislocation. The story feels tight and claustrophobic - a handful of characters across a few locations, the intimate first-person narrative, the lack of character names, and the slow reveal all paint a vivid picture of an eerie distorted reality.  
   

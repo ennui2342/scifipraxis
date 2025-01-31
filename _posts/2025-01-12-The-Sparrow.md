@@ -9,6 +9,8 @@ artist: A. Morton
 year: 1996
 writer: Mary Doria Russell
 cover: the-sparrow.png
+header:
+  image: the-sparrow.png
 ---
 A ragtag crew of Jesuit priests and their friends sets the tone for this amateur mission to an alien planet, landing without any real plan as if they're on a weekend camping trip. Unsurprisingly, dropping a group of untrained and over-privileged adults into a sensitive first-contact scenario doesn't go well.  
   

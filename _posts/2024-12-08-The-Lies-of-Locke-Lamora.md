@@ -10,6 +10,8 @@ artist: Benjamin Carré
 year: 2006
 writer: Scott Lynch
 cover: the-lies-of-locke-lamora.png
+header:
+  image: the-lies-of-locke-lamora.png
 ---
 This is a story about a gang of thieves led by Locke Lamora and their run-in with an arch brigand who moves in on their city of Camorr. I'd describe this as low fantasy - there are artefacts from a dead elder civilisation and some sorcery, but it's not a significant factor for the narrative, which mostly centres on heists and con artistry.  
   

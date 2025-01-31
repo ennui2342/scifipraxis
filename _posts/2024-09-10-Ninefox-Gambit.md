@@ -9,6 +9,8 @@ artist: Chris Moore
 year: 2016
 writer: Yoon Ha Lee
 cover: ninefox-gambit.png
+header:
+  image: ninefox-gambit.png
 ---
 From the first page, the deluge of barely explained and poetically named weapons with magical effects was a little overwhelming until I stopped trying to figure it out and just let it wash over me. In places it was a bit too Borderlands (amputation guns), but if you're not taking it too seriously it's entertaining.   
   
