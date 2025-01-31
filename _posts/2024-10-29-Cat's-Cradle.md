@@ -5,11 +5,13 @@ excerpt: 📚 Cat's cradle ✒️ Kurt Vonnegut (1963)  ✨ 5/5 🛸 End of the
 stars: 5
 tags:
   - Satire
-  - Apocolypse
+  - Apocolyptic
 artist: Julian House
 year: 1963
 writer: Kurt Vonnegut
 cover: cats-cradle.png
+header:
+  image: cats-cradle.png
 ---
 Written at the time of the Cuban missile crisis, Cat's Cradle is a cautionary tale of ice-nine - a world-ending technology that will crystalise all water into a new state. Don't expect an action thriller - this is a typical Vonnegut novel where the characters are mostly clueless idiots for whom things aren't going to turn out well. The novel isn't about saving the world; it's about how science and religion are putting power into the hands of those ill-equipped to handle it.  
   
