@@ -10,7 +10,7 @@ year: 1969
 writer: Norman Spinrad
 cover: bug-jack-baron.png
 header:
-  image: bug-jack-baron.png
+  image: /assets/bug-jack-baron.png
 ---
 In at the new wave deep end...   
   
