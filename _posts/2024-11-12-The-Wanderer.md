@@ -4,13 +4,15 @@ title: The Wanderer
 excerpt: 📚 The Wanderer ✒️ Fritz Leiber (1964)  ✨ 1/5 🛸 Disaster 🖌️ Uncredited
 stars: 1
 tags:
-  - Apocolypse
+  - Apocolyptic
 artist: Uncredited
 year: 1964
 writer: Fritz Leiber
 cover: the-wanderer.png
+header:
+  image: the-wanderer.png
 ---
-This one was high on my TBR as it has appeared on several lists of the classics in the genre. Unfortunately, the novel didn't follow through with the promise, and I was hard-pressed to make it through.   
+This one was high on my TBR as it has appeared on several lists of the classics in the genre. Unfortunately, the novel didn't follow through with the promise, and I was hard-pressed to make it through. 
   
 The structure of the story is written like a cheap disaster b-movie with a large ensemble cast spread around the globe. Their stories don't converge - this is a mosaic narrative where their personal experiences compound together to paint a rich perspective on the unfolding catastrophe, which is the focus of the story rather than any one character.  
   
