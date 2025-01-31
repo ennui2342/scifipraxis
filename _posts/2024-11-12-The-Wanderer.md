@@ -10,7 +10,7 @@ year: 1964
 writer: Fritz Leiber
 cover: the-wanderer.png
 header:
-  image: /assets/the-wanderer.png
+  og_image: /assets/the-wanderer.png
 ---
 This one was high on my TBR as it has appeared on several lists of the classics in the genre. Unfortunately, the novel didn't follow through with the promise, and I was hard-pressed to make it through. 
   
