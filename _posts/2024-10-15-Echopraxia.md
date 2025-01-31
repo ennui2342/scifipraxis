@@ -10,7 +10,7 @@ year: 2014
 writer: Peter Watts
 cover: echopraxia.png
 header:
-  image: /assets/echopraxia.png
+  og_image: /assets/echopraxia.png
 ---
 Echopraxia is a direct sequel to the excellent Blindsight. Just as the latter explored big ideas on the nature of consciousness through alien first contact, so Echopraxia explores free will and the nature of reality as humanity slides towards the posthuman singularity.   
   

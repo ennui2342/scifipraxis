@@ -11,7 +11,7 @@ year: 2024
 writer: Adrian Tchaikovsky
 cover: alien-clay.png
 header:
-  image: /assets/alien-clay.png
+  og_image: /assets/alien-clay.png
 ---
 The star of Alien Clay is the ecology of the world of Kiln - shades of new weird and body horror reminiscent of Vandermeer, but with a sound biological rationale that frames a radically different ecology rather than just an alien or two. Kiln is decidedly not an earthlike world.  
   
