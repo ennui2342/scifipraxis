@@ -10,6 +10,8 @@ artist: Joe Petagno
 year: 1967
 writer: Harlan Ellison
 cover: dangerous-visions-1.png
+header:
+  image: dangerous-visions-1.png
 ---
 An important anthology in the rise of the '60s American new wave movement, breaking taboos, introducing sex to stories, and exploring experimental writing styles. Ellison adds copious forwards to each story, at times fawning over the authors and imbuing their work with more meaning than is usually delivered.  
   
