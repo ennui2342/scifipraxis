@@ -138,6 +138,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/scifipraxis"
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-square-bluesky"
+      url: "https://bsky.app/profile/scifipraxis.bsky.social"
+    - label: "Goodreads"
+      icon: "fab fa-fw fa-goodreads"
+      url: "http://www.goodreads.com/ennui2342"
 
 # Site Footer
 footer:
