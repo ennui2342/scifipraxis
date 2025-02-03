@@ -5,6 +5,7 @@ excerpt: 📚 Echopraxia ✒️ Peter Watts (2014) ✨ 4/5 🛸 The singularity 
 stars: 4
 tags:
   - The_Singularity
+  - Posthuman
 artist: Uncredited
 year: 2014
 writer: Peter Watts
