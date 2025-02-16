@@ -27,13 +27,18 @@ layout: default
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
+    <div vocab="https://schema.org/" typeof="Review">
+
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title -%}
+      <div property="itemReviewed" typeof="Book">
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+            <span property="name"><a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></span>
           </h1>
+	    <span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span>
+      </div>
           {%- endif %}
           {% include page__meta.html %}
         </header>
@@ -48,13 +53,14 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+
           <div class="book_info">
-		  {% if page.cover %}<div class="book_cover"><a href="{{ page.book-link }}" target="_blank"><img src="/assets/{{ page.cover }}" alt="Book cover for {{ page.title }}" /></a></div>{% endif %}
+		  {% if page.cover %}<div class="book_cover"><a href="{{ page.book-link }}" target="_blank"><img property="image" src="/assets/{{ page.cover }}" alt="Book cover for {{ page.title }}" /></a></div>{% endif %}
 		  <div class="book_meta">
 			  ✒️  {{ page.writer }} ({{ page.year }})</br>
 			  🛸 {{ page.tags | join: ", " | replace: '_', ' ' }}</br>
 			  🖌️ {{ page.artist }}</br>
-			  ✨ <span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span></p>
+			  ✨ <span property="reviewRating" typeof="Rating"><span property="ratingValue">{{ page.stars }}</span></span>/5
 		  </div>
 	  </div>
         {{ content }}
@@ -65,8 +71,10 @@ layout: default
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
+        {% assign reviewer = page.author | default: page.authors[0] | default: site.author %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
+        <i class="fas fa-fw fa-user" aria-hidden="true"></i> <b>Reviewed by:</b> <span property="author" typeof="Person"><span property="name">{{reviewer.name}}</span></span>
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
@@ -84,6 +92,8 @@ layout: default
         </p>
       {% endif %}
     {% endif %}
+
+    </div>
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
