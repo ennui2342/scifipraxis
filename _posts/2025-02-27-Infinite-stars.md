@@ -10,9 +10,9 @@ tags:
 artist: Luca Oleastri
 year: 2017
 writer: Bryan Thomas Schmidt
-cover: infinite stars.jpg
+cover: infinite-stars.jpg
 header:
-  og_image: /assets/infinite stars.jpg
+  og_image: /assets/infinite-stars.jpg
 ---
 I'm not a fan of military SF, and this selection from some of the best in that field didn't change that opinion. Similarly, far too much of the space opera took me back to reading Doc Smith as a kid. But there were some memorable stories, and overall, I'd say half of this collection was worth the time - it just would've been better with stricter editing.
 
