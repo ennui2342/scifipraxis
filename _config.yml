@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "default" "air", "aqua", "contrast", "dark", 
 # Site Settings
 locale                   : "en-GB"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "scifipraxis books reviews"
+title                    : "scifipraxis book reviews"
 title_separator          : "-"
 subtitle                 : "Reviewing modern and vintage Science Fiction as I slowly make my way through my TBR"
 name                     : "Mark Cheverton"
