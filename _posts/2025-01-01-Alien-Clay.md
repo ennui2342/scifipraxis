@@ -5,7 +5,7 @@ excerpt: 📚 Alien Clay✒️ Adrian Tchaikovsky (2024) ✨ 4/5 🛸 Frontier c
 stars: 4
 tags:
   - Frontier
-  - Colonisation
+  - Colony
 artist: Neil Lang
 year: 2024
 writer: Adrian Tchaikovsky
