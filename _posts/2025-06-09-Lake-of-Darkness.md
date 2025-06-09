@@ -6,6 +6,7 @@ stars: 4
 tags:
   - Cosmic_Horror
   - First_Contact
+  - Utopia
 artist: Tom Sanderson
 year: 2024
 writer: Adam Roberts
