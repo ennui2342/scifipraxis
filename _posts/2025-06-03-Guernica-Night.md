@@ -5,7 +5,7 @@ excerpt: 📚 Guernica Night✒️ Barry N. Malzberg (1974) ✨ 2/5 🛸 Dystopi
 stars: 2
 tags:
   - Dystopia
-  - Existentialism
+  - Existential
 artist: Tim White
 year: 1974
 writer: Barry N. Malzberg
