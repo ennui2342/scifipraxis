@@ -22,6 +22,6 @@ The narrative moves between set pieces, layering on a sensory barrage that build
 
 Where I hit a wall was with the prose. Kendall is a literary writer - his pages drip with dense, abstract symbolism, which puts the words front and centre. But I'm not a literary reader. I want the words to fade from consciousness, to exist visually in the world. Kendall clearly loves the writing; his prose forces you to slow down, be conscious of the words, analyse the sentences to extract his meaning, or risk skimming and missing the nuance. For me, this often verged on being overwritten.
 
-I raced through the conclusion, which doubles down on abstraction as Lakerman enters the game, which we experience as a stream-of-consciousness second-person narration. I was left with an attachment to a world and characters that gripped me, but a plot and narrative I didn't comprehend enough to be satisfying. Unfortunately, I know that in a month I'll have a hard time explaining this book to anyone.
+I raced through the conclusion, which doubles down on abstraction as Lakerman enters the game, which we experience as a stream-of-consciousness second-person narration. I was left with an attachment to a world and characters that gripped me, but a plot and narrative I didn't comprehend enough to be satisfying. Unfortunately, I know that in a month I'll have a hard time explaining this book.
 
 Disclosure: The book was kindly provided by the author for review
