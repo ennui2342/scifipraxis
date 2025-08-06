@@ -12,8 +12,6 @@ cover: the-view-from-the-edge.jpg
 header:
   og_image: /assets/the-view-from-the-edge.jpg
 ---
-📚 The View From The Edge ✒️ George Turner (1977) ✨ 2/5 🛸 Anthology 🖌️ Tim Handfield
-
 This is a collection of stories produced at an Australian writing workshop held in the seventies. George Turner edits them together and provides an engaging commentary on each story - he doesn't pull any punches:
 
 > "... Illustrates a weakness evident in all but two of our twelve writers - the inability to handle action sequences realistically"
