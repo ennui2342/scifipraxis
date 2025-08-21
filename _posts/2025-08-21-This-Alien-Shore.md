@@ -13,8 +13,6 @@ cover: this-alien-shore.jpg
 header:
   og_image: /assets/this-alien-shore.jpg
 ---
-📚 This Alien Shore ✒️ C. S. Friedman (1998) ✨ 5/5 🛸 Space Opera 🖌️ Michael Whelan
-
 After the first wave of interstellar expansion resulted in extensive genetic mutations, Earth abandoned spaceflight and its fledgling colonies. Now, humanity has returned to the stars via the Ainniq, a rift in space that only mutated Guerans can navigate, giving their guild a stranglehold on space travel.
 
 Jamisia is on the run, hunted by seemingly everyone after her home on Earth's Shido corp station was destroyed. She carries secrets that tie her own fragmented identity to the fragile balance of power. But in the outworlds, pilots are dying as a mutating virus spreads rapidly across the digital networks. The guild hires the legendary security expert Dr. Kio Masada to find its source before it's too late.
