@@ -13,7 +13,7 @@ cover: a-hole-in-the-sky.jpg
 header:
   og_image: /assets/a-hole-in-the-sky.jpg
 ---
-Hamilton's latest trilogy is a bit of a departure from his space operatic doorstops. In his 400-page opening novel, we follow the coming-of-age story of Hazel, growing up in a generation ship's fallen agrarian population. Five centuries ago, a mutiny wrecked the machines and left the survivors under the 'electronic captains' rule.
+Hamilton's latest YA trilogy is a bit of a departure from his space operatic doorstops. In his 400-page opening novel, we follow the coming-of-age story of Hazel, growing up in a generation ship's fallen agrarian population. Five centuries ago, a mutiny wrecked the machines and left the survivors under the 'electronic captains' rule.
 
 Harsh laws have been imposed to stabilise the population at a sustainable primitive level while they await arrival at their fabled destination. But when a hole in the sky threatens to make the ship uninhabitable, a pastoral society unused to change is ill-equipped and even unwilling to do anything about it.
 
