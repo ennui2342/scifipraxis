@@ -12,7 +12,7 @@ cover: stations-of-the-tide.jpg
 header:
   og_image: /assets/stations-of-the-tide.jpg
 ---
-An end-times mania grips the planet of Miranda as the jubilee tides are due to transform the world into an ocean for the next century, metamorphosing its fauna and flora into water-based forms. Miranda is a liminal zone on a chaotic boundary between one state and the next; the water will wipe the world clean, and everything seems possible in a society riven with mysticism, debauchery, vice, and magic.
+An end-times mania grips the planet of Miranda as the jubilee tides are due to transform the world into an ocean for the next century, metamorphosing its fauna and flora into their water-based forms. Miranda is a liminal zone on a chaotic boundary between one state and the next; the water will wipe the world clean, and everything seems possible in a society riven with mysticism, debauchery, vice, and magic.
 
 Prohibited Promethean technology, rumoured to grant the shapeshifting power of the ecosystem to Miranda's human inhabitants, has been stolen. The Kafkaesque bureaucracy, which restricts advanced technologies, sends the bureaucrat – his depersonalised identity defined entirely by his job, the classic man in black with his sentient briefcase – to pursue his nemesis, the thief Gregorian, across a deconstructing landscape as the world parties.
 
