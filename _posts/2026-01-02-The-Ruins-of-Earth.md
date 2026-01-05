@@ -8,7 +8,9 @@ tags:
 artist: Uncredited
 year: 1973
 writer: Thomas M Disch
-cover:
+cover: the-ruins-of-earth.jpg
+header:
+  og_image: /assets/the-ruins-of-earth.jpg
 ---
 An anthology dedicated to ecological crisis. Disch snares some of the top names of the new wave to write about the consequences of capitalism, urbanisation, pollution, and societal collapse. 
 
