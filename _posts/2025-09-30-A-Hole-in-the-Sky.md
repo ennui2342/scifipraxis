@@ -1,7 +1,7 @@
 ---
 publish: true
 title: A Hole in the Sky
-excerpt: 📚 A Hole in the Sky ✒️ Peter F. Hamilton ✨ 4/5 🛸 Generation Ship, Bildungsroman 🖌️ Uncredited
+excerpt: 📚 A Hole in the Sky ✒️ Peter F. Hamilton (2026) ✨ 4/5 🛸 Generation Ship, Bildungsroman 🖌️ Uncredited
 stars: 4
 tags:
   - Generation_Ship
@@ -12,6 +12,7 @@ writer: Peter F. Hamilton
 cover: a-hole-in-the-sky.jpg
 header:
   og_image: /assets/a-hole-in-the-sky.jpg
+wikidata: "[[Q135188016.yml]]"
 ---
 Hamilton's latest YA trilogy is a bit of a departure from his space operatic doorstops. In his 400-page opening novel, we follow the coming-of-age story of Hazel, growing up in a generation ship's fallen agrarian population. Five centuries ago, a mutiny wrecked the machines and left the survivors under the 'electronic captains' rule.
 
