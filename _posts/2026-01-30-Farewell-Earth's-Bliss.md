@@ -11,6 +11,7 @@ writer: D G Compton
 cover: farewell-earths-bliss.jpg
 header:
   og_image: /assets/farewell-earths-bliss.jpg
+wikidata: "[[Q134440944.yml]]"
 ---
 After nine weeks confined in a small spaceship and drugged into passivity, a group of convicts arrive at Mars not knowing what awaits them.
 
