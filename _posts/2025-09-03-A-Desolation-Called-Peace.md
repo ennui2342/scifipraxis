@@ -14,6 +14,7 @@ cover: a-desolation-called-peace.jpg
 header:
   og_image: /assets/a-desolation-called-peace.jpg
 wikidata: "[[Q105722561.yml]]"
+description: A review of A Desolation Called Peace by Arkady Martine (1985), first published in 2021. Winner of the Hugo Award for Best Novel (2022).
 ---
 The second part of the Teixcalaan duology sees Ambassador Mahit on the frontline with Envoy Three Seagrass as they attempt first contact to end a war.
 

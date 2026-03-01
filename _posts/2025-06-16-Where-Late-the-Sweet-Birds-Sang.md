@@ -13,6 +13,7 @@ cover: where-late-the-sweet-birds-sang.jpg
 header:
   og_image: /assets/where-late-the-sweet-birds-sang.jpg
 wikidata: "[[Q3135306.yml]]"
+description: A review of Where Late the Sweet Birds Sang by Kate Wilhelm (1928–2018), first published in 1976. Winner of the Hugo Award for Best Novel (1977).
 ---
 In Wilhelm's slow-motion quiet pastoral apocalypse (shades of Earth Abides), widespread infertility wipes out civilisation in a generation. A last community of preppers resort to cloning animals and themselves, but how much of our humanity has to be sacrificed so the species can survive?
 

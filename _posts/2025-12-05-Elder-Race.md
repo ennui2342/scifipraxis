@@ -12,6 +12,7 @@ cover: elder-race.jpg
 header:
   og_image: /assets/elder-race.jpg
 wikidata: "[[Q110825800.yml]]"
+description: A review of Elder Race by Adrian Tchaikovsky (1972), first published in 2021.
 ---
 On a colony world, abandoned for a thousand years before its rediscovery, a stranded anthropologist named Nyr sleeps the centuries away, waiting forlornly for contact from Earth. The princess Lynesse, calling in an oath he once made to her ancestor, wakes him and entreats his aid. 
 

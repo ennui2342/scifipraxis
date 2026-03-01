@@ -12,5 +12,6 @@ cover: bridging-infinity.png
 header:
   og_image: /assets/bridging-infinity.png
 wikidata: "[[Q115203522.yml]]"
+description: A review of Bridging Infinity, first published in 2016.
 ---
 On the whole a disappointing collection given the heavyweight lineup. There were a couple of interesting climate fiction stories, but far too many duds for me to recommend it. Ken Liu's story Seven Birthdays was by far the standout read - a tale of post-humanity through deep time threaded by melancholic reflections on family. Catch it instead in his collection The Hidden Girl and Other Stories.

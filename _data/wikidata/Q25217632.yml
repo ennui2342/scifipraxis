@@ -4,24 +4,25 @@ wikipedia_url: "https://en.wikipedia.org/wiki/The_Fifth_Season_(novel)"
 title: The Fifth Season
 year: 2015
 genres:
-  - science fiction
   - science fantasy
   - fantasy
+  - science fiction
+series: The Broken Earth
 awards_won:
   - name: Hugo Award for Best Novel
     year: 2016
   - name: "Planète SF Bloggers' Award"
     year: 2018
 awards_nominated:
+  - name: Locus Award for Best Fantasy Novel
+    year: 2016
   - name: Ignotus Award for Best Foreign Novel
     year: 2018
-  - name: World Fantasy Award for Best Novel
+  - name: Nebula Award for Best Novel
     year: 2016
   - name: Otherwise Award
     year: 2015
-  - name: Nebula Award for Best Novel
-    year: 2016
-  - name: Locus Award for Best Fantasy Novel
+  - name: World Fantasy Award for Best Novel
     year: 2016
 authors:
   - name: Q2427544

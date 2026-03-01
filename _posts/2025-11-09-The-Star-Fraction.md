@@ -14,6 +14,7 @@ cover: the-star-fraction.jpg
 header:
   og_image: /assets/the-star-fraction.jpg
 wikidata: "[[Q15034603.yml]]"
+description: A review of The Star Fraction by Ken MacLeod (1954), first published in 1995.
 ---
 In the aftermath of World War III, the US/UN orbital platforms enforce an uneasy nuclear truce over the world. In the UK, the Republic has fallen, leaving a balkanised landscape of militarised polises touting every political ideology imaginable. Moh Kohn, a mercenary for hire, awakens an AI in the network triggering plans for a long-awaited revolution that will bring the Republic back to power.
 

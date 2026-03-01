@@ -4,9 +4,10 @@ wikipedia_url: "https://en.wikipedia.org/wiki/Annihilation_(VanderMeer_novel)"
 title: Annihilation
 year: 2014
 genres:
+  - fantasy
   - body horror literature
   - science fiction
-  - fantasy
+series: Southern Reach Series
 awards_won:
   - name: Nebula Award for Best Novel
     year: 2015

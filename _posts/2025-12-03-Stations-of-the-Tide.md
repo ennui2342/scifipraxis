@@ -12,6 +12,7 @@ cover: stations-of-the-tide.jpg
 header:
   og_image: /assets/stations-of-the-tide.jpg
 wikidata: "[[Q3497490.yml]]"
+description: A review of Stations of the Tide by Michael Swanwick (1950), first published in 1991. Winner of the Nebula Award for Best Novel (1992).
 ---
 An end-times mania grips the planet of Miranda as the jubilee tides are due to transform the world into an ocean for the next century, metamorphosing its fauna and flora into their water-based forms. Miranda is a liminal zone on a chaotic boundary between one state and the next; the water will wipe the world clean, and everything seems possible in a society riven with mysticism, debauchery, vice, and magic.
 

@@ -13,6 +13,7 @@ cover: a-memory-called-empire.png
 header:
   og_image: /assets/a-memory-called-empire.png
 wikidata: "[[Q82566838.yml]]"
+description: A review of A Memory Called Empire by Arkady Martine (1985), first published in 2019. Winner of the Hugo Award for Best Novel (2020).
 ---
 The Teixcalaanli empire is on the cusp of civil war as Mahit takes over as ambassador from her assassinated predecessor and tries to navigate court politics to protect her home from annexation without meeting the same end herself.  
   

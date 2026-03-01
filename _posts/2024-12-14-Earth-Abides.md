@@ -12,6 +12,7 @@ cover: earth-abides.png
 header:
   og_image: /assets/earth-abides.png
 wikidata: "[[Q3213115.yml]]"
+description: A review of Earth Abides by George R. Stewart (1895–1980), first published in 1949. Winner of the International Fantasy Award for Best Fiction (1951).
 ---
 Unlike many post-pandemic stories, Earth Abides is a more thoughtful and pastoral take on the apocalypse. Almost everyone is dead - there are only scattered handfuls of people left and plenty of resources to scavenge, so any conflict is with the slow and steady reclamation by nature rather than the modern obsession with the savagery of man.  
   

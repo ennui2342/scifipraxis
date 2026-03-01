@@ -1,7 +1,7 @@
 wikidata_id: Q3045861
 wikidata_url: "https://www.wikidata.org/wiki/Q3045861"
 wikipedia_url: "https://en.wikipedia.org/wiki/Stories_of_Your_Life_and_Others"
-title: Stories of Your Life and Others
+title: Stories Of Your Life and Others
 year: 2002
 genres:
   - science fiction
@@ -12,10 +12,10 @@ awards_won:
   - name: Locus Award for Best Collection
     year: 2003
 awards_nominated:
-  - name: "Grand Prix de l'Imaginaire for Best Foreign-Language Short Story"
-    year: 2007
   - name: Mythopoeic Fantasy Award for Adult Literature
     year: 2003
+  - name: "Grand Prix de l'Imaginaire for Best Foreign-Language Short Story"
+    year: 2007
 authors:
   - name: Ted Chiang
     wikidata_id: Q503095

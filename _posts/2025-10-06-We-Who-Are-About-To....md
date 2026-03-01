@@ -13,6 +13,7 @@ cover: we-who-are-about-to.jpg
 header:
   og_image: /assets/we-who-are-about-to.jpg
 wikidata: "[[Q7977856.yml]]"
+description: A review of We Who Are About To... by Joanna Russ (1937–2011), first published in 1977.
 ---
 In the depths of space, a catastrophic malfunction maroons eight dysfunctional castaways on a barren planet with only six months' supplies, no indigenous life, and no hope of rescue.
 

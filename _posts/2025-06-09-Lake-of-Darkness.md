@@ -14,6 +14,7 @@ cover: lake-of-darkness.jpg
 header:
   og_image: /assets/lake-of-darkness.jpg
 wikidata: "[[Q135187689.yml]]"
+description: A review of Lake of Darkness by Adam Roberts (1965).
 ---
 The captain of a black hole research vessel makes contact with an alien entity and flips, killing all his crew. Apprehended, he's interviewed by a historian who is seemingly infected by the captain, and further violence ensues. To find out what's going on, a mission is sent to the black hole, but predictably, this also ends badly.
 

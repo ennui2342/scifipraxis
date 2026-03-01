@@ -13,6 +13,7 @@ cover: planetfall.jpg
 header:
   og_image: /assets/planetfall.jpg
 wikidata: "[[Q85793524.yml]]"
+description: A review of Planetfall by Emma Newman (1976), first published in 2015.
 ---
 A tale of a fledgling colony that's built upon deceit and mystery, a protagonist who is mentally scarred and traumatised by the events of planetfall, and a mysterious alien artefact - the city of god - that looms unexplained over them all. A stranger arrives from the wilderness, unsettling the delicate balance of secrets kept for 20 years, and the lies start to unravel.
 

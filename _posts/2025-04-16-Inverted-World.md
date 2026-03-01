@@ -13,6 +13,7 @@ cover: inverted-world.jpg
 header:
   og_image: /assets/inverted-world.jpg
 wikidata: "[[Q1623320.yml]]"
+description: A review of Inverted World by Christopher Priest (1943–2024), first published in 1974. Winner of the BSFA Award for Best Novel (1974).
 ---
 Helward Mann is coming of age, moving out from his isolation in the city creche to join the guild system and take his place in the world - a world far stranger than he could ever imagine.
 

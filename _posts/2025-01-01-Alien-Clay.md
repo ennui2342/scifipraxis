@@ -13,6 +13,7 @@ cover: alien-clay.png
 header:
   og_image: /assets/alien-clay.png
 wikidata: "[[Q132717446.yml]]"
+description: A review of Alien Clay by Adrian Tchaikovsky (1972), first published in 2024.
 ---
 The star of Alien Clay is the ecology of the world of Kiln - shades of new weird and body horror reminiscent of Vandermeer, but with a sound biological rationale that frames a radically different ecology rather than just an alien or two. Kiln is decidedly not an earthlike world.  
   

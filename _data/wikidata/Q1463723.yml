@@ -5,6 +5,7 @@ title: Shikasta
 year: 1979
 genres:
   - science fiction
+series: Canopus in Argos
 authors:
   - name: Doris Lessing
     wikidata_id: Q40874
@@ -12,8 +13,8 @@ authors:
     isfdb_author_id: 831
     born: 1919
     died: 2013
-isfdb_id: 16845
-isfdb_url: "https://www.isfdb.org/cgi-bin/title.cgi?16845"
+isfdb_id: 2897075
+isfdb_url: "https://www.isfdb.org/cgi-bin/title.cgi?2897075"
 openlibrary_id: OL31248W
 openlibrary_url: "https://openlibrary.org/works/OL31248W"
 generated_at: "2026-03-01"

@@ -14,6 +14,7 @@ cover: the-dispossessed.jpg
 header:
   og_image: /assets/the-dispossessed.jpg
 wikidata: "[[Q467720.yml]]"
+description: A review of The Dispossessed by Ursula K. Le Guin (1929–2018), first published in 1974. Winner of the Locus Award for Best Novel (1975).
 ---
 The world of Urras is a capitalist paradise, tainted by its inequality. The moon of Anarres is an anarchist utopia, infected by bureaucracy born of famine. Shevek, an Anarresti physicist, is the first visitor to Urras in 170 years, hoping to reunite the two worlds with his unified theory.
 

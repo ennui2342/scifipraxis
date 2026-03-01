@@ -13,6 +13,7 @@ cover: the-shadow-of-the-torturer.png
 header:
   og_image: /assets/the-shadow-of-the-torturer.png
 wikidata: "[[Q1150125.yml]]"
+description: A review of The Shadow of the Torturer by Gene Wolfe (1931–2019), first published in 1980. Winner of the Tähtivaeltaja Award (2013).
 ---
 A book of two halves for me. The first half sets up the protagonist as a slightly insane apprentice torturer along with a couple of promising plotlines around an aristocratic client and a swashbuckling rebel. The citadel in which the torturers practice their art is also as much a character in this early part, reminiscent of Ghormanghast and replete with mystery and strange characters to explore.  
 

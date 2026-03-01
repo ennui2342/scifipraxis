@@ -12,6 +12,7 @@ cover: farewell-earths-bliss.jpg
 header:
   og_image: /assets/farewell-earths-bliss.jpg
 wikidata: "[[Q134440944.yml]]"
+description: A review of Farewell, Earth's Bliss by David G. Compton (1930–2023).
 ---
 After nine weeks confined in a small spaceship and drugged into passivity, a group of convicts arrive at Mars not knowing what awaits them.
 

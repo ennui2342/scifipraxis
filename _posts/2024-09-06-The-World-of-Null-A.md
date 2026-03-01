@@ -12,6 +12,7 @@ cover: the-world-of-null-a.png
 header:
   og_image: /assets/the-world-of-null-a.png
 wikidata: "[[Q957076.yml]]"
+description: A review of The World of Null-A by A. E. van Vogt (1912–2000), first published in 1945.
 ---
 As this is a 1940s book, it's only fair to make allowances - this is regarded as a classic of its time. A golden age novel is going to have some very dated science (atomic flashlights!), and like many stories of the time, this is one about a hero who overcomes all odds with his superior intelligence, vanquishing mercilessly the inferior henchmen and aliens who stand in his way.  
   

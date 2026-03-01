@@ -12,6 +12,7 @@ cover: bug-jack-baron.png
 header:
   og_image: /assets/bug-jack-baron.png
 wikidata: "[[Q3157123.yml]]"
+description: A review of Bug Jack Barron by Norman Spinrad (1940), first published in 1969.
 ---
 In at the new wave deep end...   
   

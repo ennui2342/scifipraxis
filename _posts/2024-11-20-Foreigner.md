@@ -13,6 +13,7 @@ cover: foreigner.png
 header:
   og_image: /assets/foreigner.png
 wikidata: "[[Q27763467.yml]]"
+description: A review of Foreigner by C. J. Cherryh (1942), first published in 1994.
 ---
 This is the first book in Cherryh's mega-series following a lost colony's first contact with the atevi. The atevi are psychologically different from us, without concepts like trust and friendship, and a society structured around an immutable hierarchy of duty and numerology. Their physiological similarity to humans makes the subtle differences rewardingly slow to emerge across the novel - expectations of behaviour are subverted and motivations are frustratingly opaque, but gradually, alongside our protagonist, we come to understand how the atevi tick.  
   

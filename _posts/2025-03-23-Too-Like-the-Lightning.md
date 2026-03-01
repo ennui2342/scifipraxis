@@ -13,6 +13,7 @@ cover: too-like-the-lightning.jpg
 header:
   og_image: /assets/too-like-the-lightning.jpg
 wikidata: "[[Q29649659.yml]]"
+description: A review of Too Like the Lightning by Ada Palmer (1981), first published in 2016.
 ---
 In a post-scarcity far future, near-instantaneous transportation and an itinerant population have destroyed nation-states. Allegiances are now voluntary, dividing the population into a handful of powerful factions offering varied political systems.
 
