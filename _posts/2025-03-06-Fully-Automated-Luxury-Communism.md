@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Fully Automated Luxury Communisim
-excerpt: 📚 Fully Automated Luxury Communism ✒️ Aaron Bastini ✨ 3/5 🛸 Non-fiction, Futurism 🖌️ Michael Oswell
+excerpt: 📚 Fully Automated Luxury Communism ✒️ Aaron Bastini (2019) ✨ 3/5 🛸 Non-fiction, Futurism 🖌️ Michael Oswell
 stars: 3
 tags:
   - Non-fiction
