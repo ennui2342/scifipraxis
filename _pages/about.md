@@ -1,8 +1,7 @@
 ---
 title: "About"
 permalink: /about/
-layout: single
-author_profile: true
+layout: about
 ---
 
 SF is a genre with a tendency to forget its own history. Award winners stay in print; most everything else quietly disappears. This blog is a personal project to read through a backlog I've been accumulating for years — the canonical (Hugo and Nebula winners, Clarke and BSFA nominees) alongside the overlooked and the obscure: New Wave novels that haven't been reprinted in decades, vintage paperback originals, the books that influenced everything but aren't themselves much read.

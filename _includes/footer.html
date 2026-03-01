@@ -1,0 +1,13 @@
+<footer class="page__footer">
+  <div class="page__footer-follow">
+    <ul class="social-icons">
+      {% for link in site.author.links %}
+      {% if link.url %}
+      <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+      {% endif %}
+      {% endfor %}
+      <li><a href="/feed.xml" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    </ul>
+  </div>
+  <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</div>
+</footer>

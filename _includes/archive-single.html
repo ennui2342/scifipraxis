@@ -1,53 +1,73 @@
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
-    {% if include.type == "list" and post.cover %}
+{% if include.type == "grid" %}
+
+  <div class="grid__item">
+    {% if post.cover %}
       {% assign cover_stem = post.cover | split: "." | first %}
-      <div class="archive__item-thumbnail">
+      <a href="{{ post.url | relative_url }}" class="cover-card" aria-label="{{ post.title }}">
         <picture>
           <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
           <img src="/assets/{{ post.cover }}" alt="Cover of {{ post.title }}" loading="lazy">
         </picture>
-      </div>
+        <div class="cover-card__overlay">
+          <div class="cover-card__title">{{ title }}</div>
+          <div class="cover-card__author">{{ post.writer }}{% if post.year %} &middot; {{ post.year }}{% endif %}</div>
+          {% if post.stars %}
+          {% assign stars_filled = post.stars | floor %}
+          {% assign stars_empty = 5 | minus: stars_filled %}
+          <div class="cover-card__stars">{% for i in (1..stars_filled) %}★{% endfor %}{% for i in (1..stars_empty) %}☆{% endfor %}</div>
+          {% endif %}
+        </div>
+      </a>
+    {% else %}
+      <a href="{{ post.url | relative_url }}" class="cover-card cover-card--no-image">
+        <div class="cover-card__overlay cover-card__overlay--full">
+          <div class="cover-card__title">{{ title }}</div>
+          <div class="cover-card__author">{{ post.writer }}{% if post.year %} &middot; {{ post.year }}{% endif %}</div>
+          {% if post.stars %}
+          {% assign stars_filled = post.stars | floor %}
+          {% assign stars_empty = 5 | minus: stars_filled %}
+          <div class="cover-card__stars">{% for i in (1..stars_filled) %}★{% endfor %}{% for i in (1..stars_empty) %}☆{% endfor %}</div>
+          {% endif %}
+        </div>
+      </a>
     {% endif %}
-    {% if include.type == "grid" and post.cover %}
-      {% assign cover_stem = post.cover | split: "." | first %}
-      <div class="archive__item-teaser">
-        <picture>
-          <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
-          <img src="/assets/{{ post.cover }}" alt="Cover of {{ post.title }}" loading="lazy">
-        </picture>
-      </div>
-    {% endif %}
-    <div class"archive__item-content">
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+  </div>
+
+{% else %}
+
+  <div class="list__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      {% if post.cover %}
+        {% assign cover_stem = post.cover | split: "." | first %}
+        <div class="archive__item-thumbnail">
+          <picture>
+            <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
+            <img src="/assets/{{ post.cover }}" alt="Cover of {{ post.title }}" loading="lazy">
+          </picture>
+        </div>
       {% endif %}
-    </h2>
-    {% include page__meta.html type=include.type %}
-		  <div class="archive__item-excerpt">
-<p>
-			  ✒️  {{ post.writer }} ({{ post.year }})</br>
-			  🛸 {{ post.tags | join: ", " | replace: '_', ' ' }}</br>
-			  🖌️ {{ post.artist }}</br>
-			  ✨ <span class="stars-container stars-{{ post.stars | times:20 | round: 0 }}" title="{{ post.stars }}/5">★★★★★</span></br>
-</p>
-<p class="archive__item-prose">{{ post.content | strip_html | truncatewords: 40 }}</p>
-		  </div>
-    </div>
-  </article>
-</div>
+      <div class="archive__item-body">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        </h2>
+        {% include page__meta.html type=include.type %}
+        <div class="archive__item-excerpt">
+          <p>{{ post.writer }}{% if post.year %} ({{ post.year }}){% endif %}</p>
+          {% if post.stars %}
+          {% assign stars_filled = post.stars | floor %}
+          {% assign stars_empty = 5 | minus: stars_filled %}
+          <p class="archive__item-stars">{% for i in (1..stars_filled) %}★{% endfor %}{% for i in (1..stars_empty) %}☆{% endfor %}</p>
+          {% endif %}
+          <p class="archive__item-prose">{{ post.content | strip_html | truncatewords: 30 }}</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+{% endif %}

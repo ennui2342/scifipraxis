@@ -2,122 +2,95 @@
 layout: default
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
-
-{% assign breadcrumbs_enabled = site.breadcrumbs %}
-{% if page.breadcrumbs != null %}
-  {% assign breadcrumbs_enabled = page.breadcrumbs %}
-{% endif %}
-{% if page.url != "/" and breadcrumbs_enabled %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
 <div id="main" role="main">
-  {% include sidebar.html %}
-
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | replace: '|', '&#124;' | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  <article class="page" itemscope itemtype="https://schema.org/Review"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
-    <div vocab="https://schema.org/" typeof="Review">
-
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title -%}
-      <div property="itemReviewed" typeof="Book">
-          <h1 id="page-title" class="page__title" itemprop="headline">
-            <span property="name"><a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></span>
-          </h1>
-	    {% if page.stars %}<span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span>{% endif %}
-      </div>
-          {%- endif %}
-          {% include page__meta.html %}
-        </header>
-      {% endunless %}
-
-      <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-            </nav>
-          </aside>
-        {% endif %}
-
-          {% if page.writer %}
-          <div class="book_info">
-		  {% if page.cover %}{% assign cover_stem = page.cover | split: "." | first %}<div class="book_cover"><a href="{{ page.book-link }}" target="_blank"><picture><source srcset="/assets/{{ cover_stem }}.webp" type="image/webp"><img property="image" src="/assets/{{ page.cover }}" alt="Book cover for {{ page.title }}" /></picture></a></div>{% endif %}
-		  <div class="book_meta">
-			  ✒️  {{ page.writer }} ({{ page.year }})</br>
-			  🛸 {{ page.tags | join: ", " | replace: '_', ' ' }}</br>
-			  🖌️ {{ page.artist }}</br>
-			  ✨ <span property="reviewRating" typeof="Rating"><span property="ratingValue">{{ page.stars }}</span></span>/5
-		  </div>
-	  </div>
-          {% endif %}
-        {{ content }}
-
-        {% assign wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
-        {% if wikidata_key != "" %}
-          {% assign wikidata = site.data.wikidata[wikidata_key] %}
-          {% if wikidata %}
-            {% include wikidata_panel.html wikidata=wikidata %}
-          {% endif %}
-        {% endif %}
-
-        {% if page.writer %}
-          {% include related_reviews.html %}
-        {% endif %}
-
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
-
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% assign reviewer = page.author | default: page.authors[0] | default: site.author %}
-        {% include page__taxonomy.html %}
-        {% include page__date.html %}
-        <i class="fas fa-fw fa-user" aria-hidden="true"></i> <b>Reviewed by:</b> <span property="author" typeof="Person"><span property="name">{{reviewer.name}}</span></span>
-      </footer>
-
-      {% if page.share %}{% include social-share.html %}{% endif %}
-
-      {% include post_pagination.html %}
-    </div>
-
-    {% if site.comments.provider and page.comments %}
-      {% if jekyll.environment == 'production' %}
-        {% include comments.html %}
-      {% else %}
-        <p>
-          Comments are configured with provider: <strong>{{ site.comments.provider }}</strong>,
-          but are disabled in non-production environments.
-        </p>
-      {% endif %}
+    {% assign wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
+    {% if wikidata_key != "" %}
+      {% assign wikidata = site.data.wikidata[wikidata_key] %}
     {% endif %}
 
+    <!-- Post header: cover left, right column (metadata + review body) -->
+    <div class="post-header{% unless page.cover %} post-header--no-cover{% endunless %}">
+      {% if page.cover %}
+      {% assign cover_stem = page.cover | split: "." | first %}
+      <div class="post-cover">
+        <picture>
+          <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
+          <img itemprop="image" src="/assets/{{ page.cover }}" alt="Cover of {{ page.title }}">
+        </picture>
+      </div>
+      {% endif %}
+
+      <div class="post-right">
+        <div class="post-info" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Book">
+          <div class="post-meta__tags">
+            {% for tag in page.tags %}
+            <a class="post-meta__tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag | replace: '_', ' ' }}</a>
+            {% endfor %}
+            {% if wikidata.series %}
+            <span class="post-meta__tag post-meta__tag--series">{{ wikidata.series }}</span>
+            {% endif %}
+          </div>
+
+          <h1 class="post-title" itemprop="name">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+
+          {% if page.stars %}
+          {% assign stars_filled = page.stars | floor %}
+          {% assign stars_empty = 5 | minus: stars_filled %}
+          <div class="post-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="{{ page.stars }}">
+            <meta itemprop="bestRating" content="5">
+            {% for i in (1..stars_filled) %}★{% endfor %}{% for i in (1..stars_empty) %}☆{% endfor %}
+          </div>
+          {% endif %}
+
+          <div class="post-byline">
+            <strong itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">{{ page.writer }}</span>
+            </strong>
+            {% if page.year %}&middot; {{ page.year }}{% endif %}<br>
+            {% if page.artist %}Cover by {{ page.artist }}{% endif %}
+          </div>
+        </div>
+
+        <!-- Review body flows directly from metadata -->
+        <div class="post-body page__content" itemprop="reviewBody">
+          {{ content }}
+        </div>
+      </div>
     </div>
+
+    <!-- Series list -->
+    {% include related_reviews.html %}
+
+    <!-- Bibliographic panel -->
+    {% if wikidata %}
+      {% include wikidata_panel.html wikidata=wikidata %}
+    {% endif %}
+
+    <!-- Tags + date + share buttons -->
+    <div class="post-footer-meta" style="max-width:680px;margin:1.5rem auto 0;padding:0 2rem 1.5rem;font-size:0.8rem;color:#888;border-top:1px solid #e0dbd3;padding-top:1rem;">
+      {% include page__taxonomy.html %}
+      {% include page__date.html %}
+      {% if page.share %}{% include social-share.html %}{% endif %}
+    </div>
+
+    <!-- Prev/Next navigation -->
+    {% include post_pagination.html %}
+
+    <!-- More by [author] — after prev/next -->
+    {% if page.writer %}
+      {% include more_by_author.html %}
+    {% endif %}
+
+    <!-- You might also enjoy — full width, any author -->
+    {% include you_might_enjoy.html %}
+
   </article>
 
   {% include jsonld.html %}
-
-  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    {% include page__related.html posts=site.related_posts %}
-  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
-    {% include page__related.html posts=site.posts %}
-  {% endif %}
 </div>

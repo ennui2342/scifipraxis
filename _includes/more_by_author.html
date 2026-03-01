@@ -1,0 +1,20 @@
+{% comment %}Other posts by same author{% endcomment %}
+{% assign author_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% unless post.url == page.url %}
+    {% if post.writer == page.writer %}
+      {% assign author_posts = author_posts | push: post %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% if author_posts.size > 0 %}
+<div class="more-by-author">
+  <div class="more-by-author__heading">More by {{ page.writer }}</div>
+  <div class="entries-grid">
+    {% for post in author_posts limit: 4 %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

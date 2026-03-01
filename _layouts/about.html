@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  <article class="page about-page">
+    <div class="about-layout">
+      <div class="about-content page__content">
+        {{ content }}
+      </div>
+
+      <aside class="about-profile">
+        {% if site.author.avatar %}
+        <img class="about-profile__avatar" src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+        {% endif %}
+        <div class="about-profile__name">{{ site.author.name }}</div>
+        {% if site.author.location %}
+        <div class="about-profile__location">{{ site.author.location }}</div>
+        {% endif %}
+        <ul class="about-profile__links">
+          {% for link in site.author.links %}
+          {% if link.url %}
+          <li><a href="{{ link.url }}"><i class="{{ link.icon }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </aside>
+    </div>
+  </article>
+
+  {% include you_might_enjoy.html %}
+</div>

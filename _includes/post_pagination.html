@@ -1,0 +1,41 @@
+{% if page.previous or page.next %}
+<nav class="post-nav">
+  {% if page.previous %}
+  <a class="post-nav__item post-nav__item--prev" href="{{ page.previous.url | relative_url }}">
+    {% if page.previous.cover %}
+    {% assign prev_stem = page.previous.cover | split: "." | first %}
+    <div class="post-nav__cover">
+      <picture>
+        <source srcset="/assets/{{ prev_stem }}.webp" type="image/webp">
+        <img src="/assets/{{ page.previous.cover }}" alt="">
+      </picture>
+    </div>
+    {% endif %}
+    <div class="post-nav__text">
+      <span class="post-nav__label">← Previous</span>
+      <span class="post-nav__title">{{ page.previous.title }}</span>
+    </div>
+  </a>
+  {% else %}
+  <div></div>
+  {% endif %}
+
+  {% if page.next %}
+  <a class="post-nav__item post-nav__item--next" href="{{ page.next.url | relative_url }}">
+    <div class="post-nav__text">
+      <span class="post-nav__label">Next →</span>
+      <span class="post-nav__title">{{ page.next.title }}</span>
+    </div>
+    {% if page.next.cover %}
+    {% assign next_stem = page.next.cover | split: "." | first %}
+    <div class="post-nav__cover">
+      <picture>
+        <source srcset="/assets/{{ next_stem }}.webp" type="image/webp">
+        <img src="/assets/{{ page.next.cover }}" alt="">
+      </picture>
+    </div>
+    {% endif %}
+  </a>
+  {% endif %}
+</nav>
+{% endif %}

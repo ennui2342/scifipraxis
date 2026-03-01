@@ -1,59 +1,74 @@
-{% comment %}
-  Wikidata bibliographic enrichment panel.
-  Usage: {% include wikidata_panel.html wikidata=wikidata %}
-  The wikidata variable is a hash from _data/wikidata/Q<id>.yml
-{% endcomment %}
-
-<section class="wikidata-panel">
-  <h2 class="wikidata-panel__title">About this book</h2>
-
-  <p>
-    <strong>{{ include.wikidata.title }}{% if include.wikidata.subtitle %}: {{ include.wikidata.subtitle }}{% endif %}</strong>
-    {% if include.wikidata.authors and include.wikidata.authors.size > 0 %}
-      {% for author in include.wikidata.authors %}
-        {% if forloop.first %}by{% else %}and{% endif %}
-        {% if author.wikipedia_url %}<a href="{{ author.wikipedia_url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}
-        {% if author.born %}({{ author.born }}{% if author.died %}–{{ author.died }}{% endif %}){% endif %}
-      {% endfor %}
-    {% endif %}
-    {% if include.wikidata.year %}, first published in {{ include.wikidata.year }}{% endif %}.
-    {% if include.wikidata.series %}
-      Book {% if include.wikidata.series_position %}{{ include.wikidata.series_position }} of {% endif %}the {{ include.wikidata.series }} series.
-    {% endif %}
-  </p>
-
-  {% if include.wikidata.genres and include.wikidata.genres.size > 0 %}
-    <p><strong>Genres:</strong> {{ include.wikidata.genres | join: " &middot; " }}</p>
+{% assign wd = include.wikidata %}
+<div class="bib-panel">
+  {% if wd.series %}
+  <div class="bib-item">
+    <div class="bib-item__label">Series</div>
+    <div class="bib-item__value">{{ wd.series }}</div>
+  </div>
   {% endif %}
 
-  {% if include.wikidata.awards_won and include.wikidata.awards_won.size > 0 %}
-    <p>
-      <strong>Awards:</strong>
-      {% for award in include.wikidata.awards_won %}
-        {{ award.name }}{% if award.year %} ({{ award.year }}){% endif %}{% unless forloop.last %} &middot; {% endunless %}
-      {% endfor %}.
-      {% if include.wikidata.awards_nominated and include.wikidata.awards_nominated.size > 0 %}
-        Also nominated for:
-        {% for award in include.wikidata.awards_nominated %}
-          {{ award.name }}{% if award.year %} ({{ award.year }}){% endif %}{% unless forloop.last %}, {% endunless %}
-        {% endfor %}.
-      {% endif %}
-    </p>
-  {% elsif include.wikidata.awards_nominated and include.wikidata.awards_nominated.size > 0 %}
-    <p>
-      <strong>Nominated for:</strong>
-      {% for award in include.wikidata.awards_nominated %}
-        {{ award.name }}{% if award.year %} ({{ award.year }}){% endif %}{% unless forloop.last %} &middot; {% endunless %}
-      {% endfor %}.
-    </p>
+  {% if wd.year %}
+  <div class="bib-item">
+    <div class="bib-item__label">First published</div>
+    <div class="bib-item__value">{{ wd.year }}</div>
+  </div>
   {% endif %}
 
-  <p>
-    <strong>More information:</strong>
-    <a href="{{ include.wikidata.wikidata_url }}">Wikidata ↗</a>
-    {% if include.wikidata.wikipedia_url %} &middot; <a href="{{ include.wikidata.wikipedia_url }}">Wikipedia ↗</a>{% endif %}
-    {% if include.wikidata.isfdb_url %} &middot; <a href="{{ include.wikidata.isfdb_url }}">ISFDB ↗</a>{% endif %}
-    {% if include.wikidata.openlibrary_url %} &middot; <a href="{{ include.wikidata.openlibrary_url }}">Open Library ↗</a>{% endif %}
-    {% if include.wikidata.goodreads_url %} &middot; <a href="{{ include.wikidata.goodreads_url }}">Goodreads ↗</a>{% endif %}
-  </p>
-</section>
+  {% if wd.authors and wd.authors.size > 0 %}
+  {% for author in wd.authors %}
+  <div class="bib-item">
+    <div class="bib-item__label">Author</div>
+    <div class="bib-item__value">
+      {% if author.wikipedia_url %}<a href="{{ author.wikipedia_url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}
+      {% if author.born %}({{ author.born }}){% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if wd.genres and wd.genres.size > 0 %}
+  <div class="bib-item">
+    <div class="bib-item__label">Genre</div>
+    <div class="bib-item__value">{{ wd.genres | join: " · " | capitalize }}</div>
+  </div>
+  {% endif %}
+
+  {% if wd.openlibrary_id %}
+  <div class="bib-item">
+    <div class="bib-item__label">Open Library</div>
+    <div class="bib-item__value"><a href="{{ wd.openlibrary_url }}">{{ wd.openlibrary_id }}</a></div>
+  </div>
+  {% endif %}
+
+  {% if wd.isfdb_id %}
+  <div class="bib-item">
+    <div class="bib-item__label">ISFDB</div>
+    <div class="bib-item__value"><a href="{{ wd.isfdb_url }}">Title #{{ wd.isfdb_id }}</a></div>
+  </div>
+  {% endif %}
+
+  {% if wd.wikidata_id %}
+  <div class="bib-item">
+    <div class="bib-item__label">Wikidata</div>
+    <div class="bib-item__value"><a href="{{ wd.wikidata_url }}">{{ wd.wikidata_id }}</a></div>
+  </div>
+  {% endif %}
+</div>
+
+{% if wd.awards_won and wd.awards_won.size > 0 %}
+  {% for award in wd.awards_won %}
+  <div class="award-badge">
+    <span class="award-badge__icon">🏆</span>
+    <span class="award-badge__text"><strong>Won:</strong> {{ award.name }}{% if award.year %}, {{ award.year }}{% endif %}</span>
+  </div>
+  {% endfor %}
+{% endif %}
+
+{% if wd.awards_nominated and wd.awards_nominated.size > 0 %}
+  {% for award in wd.awards_nominated %}
+  <div class="award-badge">
+    <span class="award-badge__icon">🏆</span>
+    <span class="award-badge__text"><strong>Nominated:</strong> {{ award.name }}{% if award.year %}, {{ award.year }}{% endif %}</span>
+  </div>
+  {% endfor %}
+{% endif %}

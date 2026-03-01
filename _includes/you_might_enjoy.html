@@ -1,0 +1,18 @@
+{% comment %}Recent posts from any author, excluding current{% endcomment %}
+{% assign enjoy_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% unless post.url == page.url %}
+    {% assign enjoy_posts = enjoy_posts | push: post %}
+  {% endunless %}
+{% endfor %}
+
+{% if enjoy_posts.size > 0 %}
+<div class="you-might-enjoy">
+  <div class="you-might-enjoy__heading">You might also enjoy</div>
+  <div class="entries-grid">
+    {% for post in enjoy_posts limit: 5 %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

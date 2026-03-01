@@ -5,131 +5,856 @@ search: false
 
 @charset "utf-8";
 
+// =============================================================================
+// B+A Editorial design — variables set before skin/theme import
+// =============================================================================
+$background-color       : #fafaf7 !default;
+$text-color             : #1a1a18 !default;
+$muted-text-color       : #888 !default;
+$primary-color          : #c0392b !default;
+$border-color           : #e0dbd3 !default;
+$footer-background-color: #1a1a18 !default;
+$link-color             : #1a1a18 !default;
+$masthead-link-color    : #555 !default;
+$masthead-link-color-hover: #c0392b !default;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-html {
- font-size: 16px;
+
+// =============================================================================
+// Base typography
+// =============================================================================
+html { font-size: 16px; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  background: $background-color;
+  color: $text-color;
 }
 
-$mobile: "(max-width: 1099px)";
-$desktop: "(min-width: 1100px)";
-
-
-@media #{$mobile} {
-  	.book_info {
-	  	display: block;
-	  	margin-bottom: 30px;
-  	}
-  	.book_cover {
-		width: 50%;
-		margin: 0 auto;
-  img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop to fit the container */
-    border-radius: 8px; /* Rounded corners */
-  }
-	}
-	.book_meta {
-		width:70%;
-		margin-top:30px;
-	}
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.archive__subtitle {
+  font-family: 'Instrument Serif', Georgia, serif;
 }
 
-@media #{$desktop} {	
-	.book_info {
-		margin-bottom: 30px;
-		word-wrap: normal;
-	}
-	.book_cover {
-		width: 50%;
-		display: inline-block;
-  img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop to fit the container */
-    border-radius: 8px; /* Rounded corners */
-  }
-	}
-	.book_meta {
-		width:45%;
-		margin-left: 4%;
-		display: inline-block;
-		vertical-align: top;
-	}
-	.post-teaser .book_cover {
-		width: 25%;
-		display: inline-block;
-	}
-	.post-teaser .book_meta {
-		width:70%;
-		margin-left: 4%;
-		display: inline-block;
-		vertical-align: top;
-	}
-}
+.page__title { font-style: italic; }
 
-a.button:hover {
-	color: #fff;
-}
+a { color: $link-color; }
 
-.stars-container {
+
+// =============================================================================
+// Custom masthead (overrides _includes/masthead.html)
+// =============================================================================
+.masthead {
+  background: $background-color;
+  border-bottom: none;
+  padding: 0;
+  box-shadow: none;
   position: relative;
+  z-index: 20;
+
+  // Override MM's flex row layout — we want stacked rows
+  &__inner-wrap {
+    display: block !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  &__top {
+    padding: 1.5rem 0 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  &__wordmark {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 2.4rem;
+    color: $text-color;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    text-decoration: none;
+
+    &:hover { color: $text-color; }
+  }
+
+  &__subtitle {
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+
+  &__nav {
+    padding: 0.65rem 0;
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid #ddd;
+
+    a {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #555;
+      text-decoration: none;
+
+      &:hover { color: $primary-color; }
+    }
+  }
+}
+
+// Hide the MM greedy-nav (replaced by custom masthead.html include)
+.greedy-nav { display: none !important; }
+
+
+// =============================================================================
+// Layout — full-width home page, no sidebar
+// =============================================================================
+
+.layout--home {
+  // Kill the sidebar entirely
+  .sidebar {
+    display: none !important;
+    float: none !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  // The archive layout uses .archive as the main content wrapper, not .page
+  .archive {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #main {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+// Tags page — full width, no sidebar, 5-column grid
+.layout--tags {
+  .sidebar { display: none !important; float: none !important; width: 0 !important; padding: 0 !important; margin: 0 !important; }
+  .archive { float: none !important; width: 100% !important; padding: 3rem 2rem 0 !important; margin: 0 !important; }
+  #main { padding-left: 0 !important; padding-right: 0 !important; }
+
+  h1.page__title {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 3.2rem;
+    font-style: italic;
+    line-height: 1.1;
+    color: $text-color;
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .entries-grid {
+    grid-template-columns: repeat(5, 1fr);
+    @media (max-width: 1024px) { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 767px)  { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 480px)  { grid-template-columns: repeat(2, 1fr); }
+  }
+}
+
+// Re-enable sidebar on single post pages
+.layout--single .sidebar {
+  display: block !important;
+}
+
+
+// =============================================================================
+// Hero section (home page)
+// =============================================================================
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 0;
+  }
+}
+
+.hero__image {
+  a { display: block; }
+
+  picture { display: block; overflow: hidden; }
+
+  img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+
+  a:hover img { transform: scale(1.02); }
+}
+
+.hero__label {
   display: inline-block;
-  color: transparent;
-  overflow:hidden;
+  background: $primary-color;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 0.75rem;
 }
 
-.stars-container:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '★★★★★';
-  color: lightgray;
+.hero__title {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  line-height: 1.1;
+  color: $text-color;
+  margin-bottom: 0.4rem;
+  border-bottom: none;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover { color: $primary-color; }
+  }
+
+  @media (max-width: 900px) { font-size: 2.2rem; }
 }
 
-.stars-container:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '★★★★★';
-  color: #F76B48;
-  overflow: hidden;
+.hero__byline {
+  font-size: 0.8rem;
+  color: $muted-text-color;
+  margin-bottom: 0.75rem;
 }
 
-.stars-0:after { width: 0%; }
-.stars-10:after { width: 10%; }
-.stars-20:after { width: 20%; }
-.stars-30:after { width: 30%; }
-.stars-40:after { width: 40%; }
-.stars-50:after { width: 50%; }
-.stars-60:after { width: 60%; }
-.stars-70:after { width: 70%; }
-.stars-80:after { width: 80%; }
-.stars-90:after { width: 90%; }
-.stars-100:after { width: 100; }
+.hero__stars {
+  color: $primary-color;
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.05em;
+}
 
-.archive__item-thumbnail picture,
-.archive__item-teaser picture,
-.book_cover picture {
+.hero__excerpt {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #444;
+  border-top: 2px solid $text-color;
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
+.hero__read-more {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $primary-color;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.1rem;
+
+  &:hover { opacity: 0.75; }
+}
+
+
+// =============================================================================
+// "More reviews" divider
+// =============================================================================
+.reviews-divider {
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #aaa;
+    white-space: nowrap;
+  }
+
+  &__line {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+  }
+}
+
+
+// =============================================================================
+// Cover overlay cards (grid view)
+// =============================================================================
+.cover-card {
   display: block;
-  aspect-ratio: 2 / 3;
+  position: relative;
   overflow: hidden;
+  aspect-ratio: 2 / 3;
+  text-decoration: none;
+  background: #1a1a18;
+
+  picture {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+  }
+
+  &:hover img { transform: scale(1.06); }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 0.7rem 0.7rem;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.55) 55%,
+      transparent 100%
+    );
+  }
+
+  &__title {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    font-size: 0.92em;
+    line-height: 1.25;
+    color: #fff;
+    margin-bottom: 0.2em;
+  }
+
+  &__author {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.62em;
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 0.3em;
+  }
+
+  &__stars {
+    color: #f0b429;
+    font-size: 0.72em;
+    letter-spacing: 0.05em;
+  }
+
+  &--no-image {
+    background: #2a2928;
+    border: 1px solid #3a3836;
+
+    .cover-card__overlay {
+      position: absolute;
+      inset: 0;
+      padding: 0.75rem;
+      background: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .cover-card__title {
+      font-size: 1em;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .cover-card__author { color: rgba(255, 255, 255, 0.5); }
   }
 }
 
-.archive__item-prose {
-  margin-top: 0.5em;
-  font-size: 0.85em;
-  color: $muted-text-color;
+// Grid container — 4 columns, full width (no sidebar on home)
+.entries-grid {
+  display: grid !important;
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 2rem 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 1024px) { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 767px)  { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 480px)  { grid-template-columns: 1fr; }
+
+  .grid__item { width: auto; margin: 0; }
 }
 
+
+// =============================================================================
+// List view (archive list items — fallback / non-grid)
+// =============================================================================
+.list__item {
+  .archive__item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.1em 0;
+    border-bottom: 1px solid $border-color;
+    background: none;
+    box-shadow: none;
+  }
+
+  .archive__item-thumbnail {
+    width: 72px;
+    flex-shrink: 0;
+
+    picture {
+      display: block;
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+
+      img { width: 100%; height: 100%; object-fit: cover; }
+    }
+  }
+
+  .archive__item-body { flex: 1; }
+
+  .archive__item-title {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0.15em;
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.82em;
+    color: $muted-text-color;
+    margin-top: 0.25em;
+
+    p { margin-bottom: 0.2em; }
+  }
+
+  .archive__item-stars { color: $primary-color; }
+
+  .archive__item-prose {
+    margin-top: 0.3em;
+    font-size: 0.85em;
+    color: $muted-text-color;
+  }
+}
+
+
+// =============================================================================
+// Single post page
+// =============================================================================
+
+// Book info block (cover + metadata)
+$mobile: "(max-width: 1099px)";
+$desktop: "(min-width: 1100px)";
+
+@media #{$mobile} {
+  .book_info  { display: block; margin-bottom: 30px; }
+  .book_cover { width: 50%; margin: 0 auto; }
+  .book_meta  { width: 70%; margin-top: 30px; }
+}
+
+@media #{$desktop} {
+  .book_info  { margin-bottom: 30px; word-wrap: normal; }
+  .book_cover { width: 50%; display: inline-block; }
+  .book_meta  { width: 45%; margin-left: 4%; display: inline-block; vertical-align: top; }
+}
+
+.book_cover picture,
+.archive__item-teaser picture {
+  display: block;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+
+
+// =============================================================================
+// Star rating widget
+// =============================================================================
+.stars-container {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  overflow: hidden;
+}
+
+.stars-container::before {
+  position: absolute;
+  top: 0; left: 0;
+  content: '★★★★★';
+  color: #d6cfc7;
+}
+
+.stars-container::after {
+  position: absolute;
+  top: 0; left: 0;
+  content: '★★★★★';
+  color: $primary-color;
+  overflow: hidden;
+}
+
+.stars-0::after   { width: 0%; }
+.stars-10::after  { width: 10%; }
+.stars-20::after  { width: 20%; }
+.stars-30::after  { width: 30%; }
+.stars-40::after  { width: 40%; }
+.stars-50::after  { width: 50%; }
+.stars-60::after  { width: 60%; }
+.stars-70::after  { width: 70%; }
+.stars-80::after  { width: 80%; }
+.stars-90::after  { width: 90%; }
+.stars-100::after { width: 100%; }
+
+
+// =============================================================================
+// Single post layout — full width, no sidebar
+// =============================================================================
+.layout--single {
+  .sidebar { display: none !important; }
+
+  #main { padding-top: 0 !important; }
+
+  // .page is the MM article wrapper on single posts
+  #main > .page {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+// Post header: cover left, right column (metadata + body)
+.post-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 0;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: start;
+
+  &--no-cover { grid-template-columns: 1fr; }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem 0;
+  }
+}
+
+.post-right { min-width: 0; }
+
+.post-cover {
+  picture { display: block; aspect-ratio: 2/3; overflow: hidden; }
+  img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    box-shadow: 4px 4px 0 $border-color;
+  }
+}
+
+.post-meta__tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.post-meta__tag {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
+
+  &--series {
+    color: $text-color;
+    border-color: $text-color;
+  }
+}
+
+.post-title {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  line-height: 1.1;
+  color: $text-color;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+
+  @media (max-width: 767px) { font-size: 2rem; }
+}
+
+.post-stars {
+  color: $primary-color;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.post-byline {
+  font-size: 0.8rem;
+  color: $muted-text-color;
+  line-height: 1.7;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid $text-color;
+
+  strong { color: $text-color; font-weight: 500; }
+}
+
+// Review body — flows from metadata in right column
+.post-body {
+  max-width: 680px;
+  margin: 1.5rem 0 0;
+  padding: 0 0 3rem;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #2a2a28;
+    margin-bottom: 1.25em;
+  }
+
+  > p:first-child::first-letter {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    float: left;
+    line-height: 0.78;
+    margin-right: 0.08em;
+    margin-top: 0.06em;
+    color: $primary-color;
+  }
+
+  h2, h3 {
+    font-family: 'Instrument Serif', Georgia, serif;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+}
+
+// Series list — dashed, after review body
+.series-list {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid $border-color;
+
+  &__heading {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $muted-text-color;
+    margin-bottom: 0.75rem;
+  }
+
+  &__items { list-style: none; padding: 0; margin: 0; }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    padding: 0.35rem 0;
+
+    &::before { content: '—'; color: #ccc; flex-shrink: 0; }
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+      font-weight: 500;
+      &:hover { color: $primary-color; }
+    }
+
+    &--current span:first-of-type { color: $primary-color; font-weight: 500; }
+  }
+
+  &__year { font-size: 0.75rem; color: $muted-text-color; }
+  &__stars { font-size: 0.75rem; color: $primary-color; margin-left: auto; }
+}
+
+// Bibliographic panel
+.bib-panel {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  background: #fff;
+
+  @media (max-width: 600px) { grid-template-columns: repeat(2, 1fr); }
+}
+
+.bib-item {
+  &__label {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $muted-text-color;
+    margin-bottom: 0.25rem;
+  }
+
+  &__value {
+    font-size: 0.85rem;
+    color: $text-color;
+    line-height: 1.4;
+
+    a { color: $text-color; text-decoration: underline; text-underline-offset: 2px; }
+  }
+}
+
+// Award badge
+.award-badge {
+  max-width: 680px;
+  margin: 0.75rem auto 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  &__text {
+    font-size: 0.75rem;
+    color: $muted-text-color;
+    strong { color: $text-color; font-weight: 500; }
+  }
+}
+
+// "More by [author]" — after Updated, article width
+.more-by-author {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 2rem 2rem;
+
+  &__heading {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $muted-text-color;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .entries-grid {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Prev/Next navigation
+.post-nav {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  border-top: 1px solid $border-color;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 0;
+    text-decoration: none;
+    color: $text-color;
+    transition: color 0.15s;
+
+    &:hover { color: $primary-color; }
+    &--next { justify-content: flex-end; text-align: right; }
+  }
+
+  &__cover {
+    width: 44px;
+    flex-shrink: 0;
+    picture { display: block; aspect-ratio: 2/3; overflow: hidden; }
+    img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  }
+
+  &__text { display: flex; flex-direction: column; gap: 0.2rem; }
+
+  &__label {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $muted-text-color;
+  }
+
+  &__title { font-size: 0.85rem; font-weight: 500; line-height: 1.3; }
+}
+
+// "You might also enjoy" — full-width, 5 columns
+.you-might-enjoy {
+  margin: 3rem 0 0;
+  padding: 0 2rem 4rem;
+
+  &__heading {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $muted-text-color;
+    padding-bottom: 0.75rem;
+    border-top: 1px solid $border-color;
+    padding-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .entries-grid {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    max-width: none;
+
+    @media (max-width: 900px) { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 600px) { grid-template-columns: repeat(2, 1fr); }
+  }
+}
+
+// Social share — constrained to footer meta width
+.post-footer-meta .page__share {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  border: none;
+
+  .btn { font-size: 0.7rem; padding: 0.3rem 0.6rem; }
+}
+
+// =============================================================================
+// Wikidata panel
+// =============================================================================
 .wikidata-panel {
   border-top: 1px solid $border-color;
   margin-top: 2em;
@@ -138,32 +863,31 @@ a.button:hover {
   color: $muted-text-color;
 
   &__title {
+    font-family: 'Instrument Serif', Georgia, serif;
     font-size: 1em;
     font-weight: 600;
     margin-bottom: 0.5em;
     border-bottom: none;
   }
 
-  p {
-    margin-bottom: 0.5em;
-  }
-
-  a {
-    color: inherit;
-  }
+  p { margin-bottom: 0.5em; }
+  a { color: inherit; }
 }
 
+
+// =============================================================================
+// Related reviews
+// =============================================================================
 .related-reviews {
   border-top: 1px solid $border-color;
   margin-top: 2em;
   padding-top: 1em;
   font-size: 0.875em;
 
-  &__section {
-    margin-bottom: 1.25em;
-  }
+  &__section { margin-bottom: 1.25em; }
 
   &__heading {
+    font-family: 'Instrument Serif', Georgia, serif;
     font-size: 0.95em;
     font-weight: 600;
     margin-bottom: 0.4em;
@@ -175,30 +899,100 @@ a.button:hover {
     margin: 0;
     padding: 0;
 
-    li {
-      margin-bottom: 0.25em;
+    li { margin-bottom: 0.25em; }
+  }
+
+  &__stars { color: $muted-text-color; font-size: 0.9em; }
+}
+
+
+// =============================================================================
+// About page — override MM's default page width constraints
+.layout--about #main > .page {
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+// About page
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem 1rem;
+  }
+}
+
+.about-content {
+  font-size: 1rem;
+  line-height: 1.85;
+
+  p { margin-bottom: 1.25em; color: #2a2a28; }
+}
+
+.about-profile {
+  &__avatar {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.25rem;
+    box-shadow: 4px 4px 0 $border-color;
+  }
+
+  &__name {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+  }
+
+  &__location {
+    font-size: 0.8rem;
+    color: $muted-text-color;
+    margin-bottom: 1rem;
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid $border-color;
+    padding-top: 0.75rem;
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      font-size: 0.8rem;
+      color: $text-color;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &:hover { color: $primary-color; }
+
+      i { width: 1.1em; text-align: center; color: $muted-text-color; }
     }
   }
-
-  &__stars {
-    color: $muted-text-color;
-    font-size: 0.9em;
-  }
 }
 
-// Define variables for image size
-$thumbnail-width: 300px;
-
-.archive__item-thumbnail {
-  width: 100%; /* Thumbnail container width */
-  max-height: 250px;
-  flex-shrink: 0; /* Prevents the image from shrinking */
-  overflow: hidden; /* Prevents overflow of large images */
-  
-  img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop to fit the container */
-    border-radius: 8px; /* Rounded corners */
-  }
+// Footer
+// =============================================================================
+.page__footer {
+  background: $footer-background-color;
+  color: rgba(255, 255, 255, 0.55) !important;
+  border-top: none;
 }
+
+.page__footer-follow .social-icons {
+  a i, a .svg-inline--fa { color: inherit !important; }
+}
+
+a.button:hover { color: #fff; }

@@ -1,0 +1,56 @@
+---
+layout: archive
+---
+
+{% assign hero = site.posts.first %}
+{% if hero %}
+<section class="hero">
+  {% if hero.cover %}
+  {% assign hero_stem = hero.cover | split: "." | first %}
+  <div class="hero__image">
+    <a href="{{ hero.url | relative_url }}">
+      <picture>
+        <source srcset="/assets/{{ hero_stem }}.webp" type="image/webp">
+        <img src="/assets/{{ hero.cover }}" alt="{{ hero.title }}">
+      </picture>
+    </a>
+  </div>
+  {% endif %}
+  <div class="hero__content">
+    <div class="hero__label">Latest review</div>
+    <h2 class="hero__title"><a href="{{ hero.url | relative_url }}">{{ hero.title }}</a></h2>
+    <div class="hero__byline">{{ hero.writer }}{% if hero.year %} &middot; {{ hero.year }}{% endif %}</div>
+    {% if hero.stars %}
+    {% assign stars_filled = hero.stars | floor %}
+    {% assign stars_empty = 5 | minus: stars_filled %}
+    <div class="hero__stars">{% for i in (1..stars_filled) %}★{% endfor %}{% for i in (1..stars_empty) %}☆{% endfor %}</div>
+    {% endif %}
+    <div class="hero__excerpt">{{ hero.content | strip_html | truncatewords: 70 }}</div>
+    <a class="hero__read-more" href="{{ hero.url | relative_url }}">Read the review &rarr;</a>
+  </div>
+</section>
+{% endif %}
+
+<div class="reviews-divider">
+  <span class="reviews-divider__label">More reviews</span>
+  <span class="reviews-divider__line"></span>
+</div>
+
+{{ content }}
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+  {% assign current_page = paginator.page %}
+{% else %}
+  {% assign posts = site.posts %}
+  {% assign current_page = 1 %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}
