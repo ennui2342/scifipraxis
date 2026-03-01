@@ -13,6 +13,7 @@ cover: guernica-night.jpg
 header:
   og_image: /assets/guernica-night.jpg
 wikidata: "[[Q122452520.yml]]"
+description: A review of Guernica Night by Barry N. Malzberg (1939–2024), first published in 1975.
 ---
 What happens when a society loses all purpose? The invention of the transporter has enabled instantaneous travel around the planet, but as a consequence, the world has become homogeneous. Suicide, known as the Final Trip, is endemic among bored young people ruled over by an authoritarian government.
 
