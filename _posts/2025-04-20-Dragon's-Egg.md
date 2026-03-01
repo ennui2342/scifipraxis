@@ -11,6 +11,7 @@ writer: Robert L. Forward
 cover: dragons-egg.jpg
 header:
   og_image: /assets/dragons-egg.jpg
+wikidata: "[[Q3205839.yml]]"
 ---
 A neutron star remnant from a nearby supernova is heading for a flyby of the solar system. An expedition is mounted to study the star, the titular Dragon's Egg, but discovers primitive life has evolved on its surface, living and evolving at a speed millions of times faster than human time.
 
