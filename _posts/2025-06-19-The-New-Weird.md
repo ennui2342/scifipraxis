@@ -13,6 +13,7 @@ cover: the-new-weird.jpg
 header:
   og_image: /assets/the-new-weird.jpg
 wikidata: "[[Q106749354.yml]]"
+description: A review of The New Weird, first published in 2008.
 ---
 Is the new weird a movement, or just an ill-defined label? This collection showcases stories from some of the most recognised new weird authors. The tone is strongly macabre, transgressive, leaning into the body horror, rather than the Mieville-esque baroque fantasy I had expected.
 
