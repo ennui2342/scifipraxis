@@ -12,6 +12,7 @@ writer: Arkady Martine
 cover: a-memory-called-empire.png
 header:
   og_image: /assets/a-memory-called-empire.png
+wikidata: "[[Q82566838.yml]]"
 ---
 The Teixcalaanli empire is on the cusp of civil war as Mahit takes over as ambassador from her assassinated predecessor and tries to navigate court politics to protect her home from annexation without meeting the same end herself.  
   
