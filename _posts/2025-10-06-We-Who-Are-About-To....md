@@ -1,17 +1,18 @@
 ---
 publish: true
 title: We Who Are About To...
-excerpt: 📚 ✒️ ✨ 🛸 🖌️
+excerpt: 📚 We Who Are About To... ✒️ Joanna Russ (1977) ✨ 4/5 🛸 Colony, Existential 🖌️ Geoff Taylor
 stars: 4
 tags:
-  - Colony
   - Existential
+  - Frontier
 artist: Geoff Taylor
 year: 1977
 writer: Joanna Russ
 cover: we-who-are-about-to.jpg
 header:
   og_image: /assets/we-who-are-about-to.jpg
+wikidata: "[[Q7977856.yml]]"
 ---
 In the depths of space, a catastrophic malfunction maroons eight dysfunctional castaways on a barren planet with only six months' supplies, no indigenous life, and no hope of rescue.
 
