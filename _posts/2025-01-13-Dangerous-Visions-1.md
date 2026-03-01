@@ -13,6 +13,7 @@ cover: dangerous-visions-1.png
 header:
   og_image: /assets/dangerous-visions-1.png
 wikidata: "[[Q745250.yml]]"
+description: A review of Dangerous Visions 1, first published in 1967.
 ---
 An important anthology in the rise of the '60s American new wave movement, breaking taboos, introducing sex to stories, and exploring experimental writing styles. Ellison adds copious forwards to each story, at times fawning over the authors and imbuing their work with more meaning than is usually delivered.  
   
