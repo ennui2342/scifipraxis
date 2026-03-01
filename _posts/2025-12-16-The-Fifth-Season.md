@@ -11,6 +11,7 @@ writer: N. K. Jemisin
 cover: the-fifth-season.png
 header:
   og_image: /assets/the-fifth-season.png
+wikidata: "[[Q25217632.yml]]"
 ---
 Scattered relics of dead civilisations litter Earth's geologically violent landscape, evidencing a cycle of extinction-level events called Seasons. Orogenes can harness environmental energy and stabilise the geology, but in the wrong hands, this power can be catastrophic. Consequently, they are ostracised from society, treated as sub-human, tightly controlled, and abused by institutions.
 
