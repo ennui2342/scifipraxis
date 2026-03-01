@@ -14,6 +14,7 @@ cover: echo-of-worlds.jpg
 header:
   og_image: /assets/echo-of-worlds.jpg
 wikidata: "[[Q134624471.yml]]"
+description: A review of Echo of Worlds by Mike Carey (1959).
 ---
 Following the events of Infinity Gate, two multiversal empires are at war, with mutual annihilation imminent. The untethered AI Rupshe has assembled a motley crew in a last-ditch attempt to prevent doomsday weapons from being unleashed. 
 
