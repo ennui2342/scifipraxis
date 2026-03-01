@@ -13,6 +13,7 @@ cover: klara-and-the-sun.png
 header:
   og_image: /assets/klara-and-the-sun.png
 wikidata: "[[Q105704813.yml]]"
+description: A review of Klara and the Sun by Kazuo Ishiguro (1954), first published in 2021.
 ---
 This is the story of a girl and her robot companion Klara, but interestingly told from the first person perspective of Klara. Ishiguro does an excellent job of showing us Klara's askew view of the world, which is almost childlike in its use of language (undershirt men, umbrella couples and dog-lead people) and the misunderstandings Klara has about how the world works. I particularly enjoyed how Klara's visual system goes split-screen to indicate focus, stress, or visual imagination with a nod towards modern AI boxed overlays.  
   
