@@ -12,6 +12,7 @@ cover: the-ruins-of-earth.jpg
 header:
   og_image: /assets/the-ruins-of-earth.jpg
 wikidata: "[[Q20723686.yml]]"
+description: A review of The Ruins of Earth, first published in 1971.
 ---
 An anthology dedicated to ecological crisis. Disch snares some of the top names of the new wave to write about the consequences of capitalism, urbanisation, pollution, and societal collapse. 
 
