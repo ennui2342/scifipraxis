@@ -13,6 +13,7 @@ cover: the-shockwave-rider.jpg
 header:
   og_image: /assets/the-shockwave-rider.jpg
 wikidata: "[[Q353231.yml]]"
+description: A review of The Shockwave Rider by John Brunner (1934–1995), first published in 1975.
 ---
 Computers had barely started to be networked when Brunner's prescient 1975 Shockwave Rider foresaw the potential of ubiquitous digital networks for cultural toxicity and surveillance. This dystopian pre-cyberpunk vision is packed with ideas - coining the term computer worm over a decade before one was deployed, describing prediction markets that leverage the wisdom of the crowds, exploring the panoptic consequences of digital identity, and predicting fractured social cohesion in a world of peripatetic working.
 
