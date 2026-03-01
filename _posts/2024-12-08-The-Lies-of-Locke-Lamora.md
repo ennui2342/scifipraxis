@@ -6,12 +6,14 @@ stars: 3
 tags:
   - Low_Fantasy
   - Swashbuckling
+  - Motley_Crew
 artist: Benjamin Carré
 year: 2006
 writer: Scott Lynch
 cover: the-lies-of-locke-lamora.png
 header:
   og_image: /assets/the-lies-of-locke-lamora.png
+wikidata: "[[Q1608505.yml]]"
 ---
 This is a story about a gang of thieves led by Locke Lamora and their run-in with an arch brigand who moves in on their city of Camorr. I'd describe this as low fantasy - there are artefacts from a dead elder civilisation and some sorcery, but it's not a significant factor for the narrative, which mostly centres on heists and con artistry.  
   

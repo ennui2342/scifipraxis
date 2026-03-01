@@ -11,6 +11,7 @@ writer: George R. Stewart
 cover: earth-abides.png
 header:
   og_image: /assets/earth-abides.png
+wikidata: "[[Q3213115.yml]]"
 ---
 Unlike many post-pandemic stories, Earth Abides is a more thoughtful and pastoral take on the apocalypse. Almost everyone is dead - there are only scattered handfuls of people left and plenty of resources to scavenge, so any conflict is with the slow and steady reclamation by nature rather than the modern obsession with the savagery of man.  
   

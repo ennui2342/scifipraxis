@@ -1,7 +1,7 @@
 ---
 publish: true
-title: When Gravity Falls
-excerpt: 📚 When Gravity Fails ✒️ George Alec Effinger ✨ 3/5 🛸 Cyberpunk Noir 🖌️ Jim Burns
+title: When Gravity Fails
+excerpt: 📚 When Gravity Fails ✒️ George Alec Effinger (1987) ✨ 3/5 🛸 Cyberpunk Noir 🖌️ Jim Burns
 stars: 3
 tags:
   - Cyberpunk
@@ -12,6 +12,7 @@ writer: George Alec Effinger
 cover: when-gravity-fails.jpg
 header:
   og_image: /assets/when-gravity-fails.jpg
+wikidata: "[[Q3115799.yml]]"
 ---
 Marîd Audran is a street-smart grifter living in a future Middle Eastern ghetto. When his latest client is murdered, he becomes a reluctant detective delving into the seedy underbelly of the Budayeen to hunt down a serial killer.
 

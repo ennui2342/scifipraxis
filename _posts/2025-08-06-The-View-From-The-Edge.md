@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The View From The Edge
-excerpt: 📚 ✒️ ✨ 🛸 🖌️
+excerpt: 📚 The View From The Edge ✒️ George Turner (1977) ✨ 2/5 🛸 Anthology 🖌️ Tim Handfield
 stars: 2
 tags:
   - Anthology

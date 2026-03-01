@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Carpet Makers
-excerpt: 📚 The Carpet Makers (1995) ✒️ Andreas Eschbach ✨ 3/5 🛸 Mystery 🖌️ Rick Berry
+excerpt: 📚 The Carpet Makers✒️ Andreas Eschbach (1995) ✨ 3/5 🛸 Mystery 🖌️ Rick Berry
 stars: 3
 tags:
   - Mystery
@@ -11,6 +11,7 @@ writer: Andreas Eschbach
 cover: the-carpet-makers.jpg
 header:
   og_image: /assets/the-carpet-makers.jpg
+wikidata: "[[Q615035.yml]]"
 ---
 Eighty thousand years ago a provincial galaxy was lost to the empire and all records mysteriously destroyed. After a rebellion overthrows the God-Emperor, the galaxy is rediscovered, which reveals whole planets dedicated solely to the production of hair carpets — each one taking its maker a lifetime to weave from human hair.
 

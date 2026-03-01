@@ -11,6 +11,7 @@ writer: Yoko Ogawa
 cover: the-memory-police.jpg
 header:
   og_image: /assets/the-memory-police.jpg
+wikidata: "[[Q85721227.yml]]"
 ---
 On an isolated island, things occasionally disappear – one day it's hats, another roses. As the disappearances accumulate, residents lose more of their memories, but the few who don't forget are hunted down by the Memory Police.
 

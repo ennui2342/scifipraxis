@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Ruins of Earth
-excerpt: 📚 The Ruins of Earth✒️ Thomas M Disch ✨ 2/5 🛸 Anthology 🖌️ Uncredited
+excerpt: 📚 The Ruins of Earth✒️ Thomas M Disch (1973) ✨ 2/5 🛸 Anthology 🖌️ Uncredited
 stars: 2
 tags:
   - Anthology
@@ -11,6 +11,7 @@ writer: Thomas M Disch
 cover: the-ruins-of-earth.jpg
 header:
   og_image: /assets/the-ruins-of-earth.jpg
+wikidata: "[[Q20723686.yml]]"
 ---
 An anthology dedicated to ecological crisis. Disch snares some of the top names of the new wave to write about the consequences of capitalism, urbanisation, pollution, and societal collapse. 
 

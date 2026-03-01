@@ -11,6 +11,7 @@ writer: Ted Chiang
 cover: stories-of-your-life-and-others.jpg
 header:
   og_image: /assets/stories-of-your-life-and-others.jpg
+wikidata: "[[Q3045861.yml]]"
 ---
 Thought-provoking SF - each story asks 'What if?' and constructs a detailed world of consequences. While Chiang's imagination is incredibly vivid, the short story format sometimes leads to narratives heavy on exposition, but, as a collection, it's remarkably strong with a couple of standout pieces that make it well worth the read.
 

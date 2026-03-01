@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Pride of Chanur
-excerpt: 📚 The Pride of Chanur ✒️ C J Cherryh ✨ 3/5 🛸 Space Opera 🖌️ Michael Whelan
+excerpt: 📚 The Pride of Chanur ✒️ C J Cherryh (1982) ✨ 3/5 🛸 Space Opera 🖌️ Michael Whelan
 stars: 3
 tags:
   - Space_Opera
@@ -12,6 +12,7 @@ writer: C. J. Cherryh
 cover: the-pride-of-chanur.jpg
 header:
   og_image: /assets/the-pride-of-chanur.jpg
+wikidata: "[[Q57272114.yml]]"
 ---
 An unknown alien species seeks refuge on a freighter of the Hani, escaping the abuse of its Kif captors. As fighting flares between the Kif and Hani over ownership of the seemingly sentient outsider, the fragile political Compact is pushed to the brink of collapse, spreading unrest from station to station.
 

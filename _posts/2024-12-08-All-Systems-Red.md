@@ -12,6 +12,7 @@ writer: Martha Wells
 cover: all-systems-red.png
 header:
   og_image: /assets/all-systems-red.png
+wikidata: "[[Q53828903.yml]]"
 ---
 A survey team is prospecting a planet with their trusty cyborg, little knowing that it had hacked its governing unit and was a free agent. Meanwhile, systems are experiencing strange glitches and there's something hostile about to pounce.  
   

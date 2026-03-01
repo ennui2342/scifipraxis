@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Too Like the Lightning
-excerpt: 📚 Too Like the Lightning ✒️ Ada Palmer ✨ 5/5 🛸 Political, Utopia 🖌️ Victor Mosquera
+excerpt: 📚 Too Like the Lightning ✒️ Ada Palmer (2016) ✨ 5/5 🛸 Political, Utopia 🖌️ Victor Mosquera
 stars: 5
 tags:
   - Utopia
@@ -12,6 +12,7 @@ writer: Ada Palmer
 cover: too-like-the-lightning.jpg
 header:
   og_image: /assets/too-like-the-lightning.jpg
+wikidata: "[[Q29649659.yml]]"
 ---
 In a post-scarcity far future, near-instantaneous transportation and an itinerant population have destroyed nation-states. Allegiances are now voluntary, dividing the population into a handful of powerful factions offering varied political systems.
 

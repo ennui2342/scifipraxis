@@ -13,6 +13,7 @@ writer: Arkady Martine
 cover: a-desolation-called-peace.jpg
 header:
   og_image: /assets/a-desolation-called-peace.jpg
+wikidata: "[[Q105722561.yml]]"
 ---
 The second part of the Teixcalaan duology sees Ambassador Mahit on the frontline with Envoy Three Seagrass as they attempt first contact to end a war.
 

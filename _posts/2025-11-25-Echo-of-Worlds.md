@@ -13,6 +13,7 @@ writer: M. R. Carey
 cover: echo-of-worlds.jpg
 header:
   og_image: /assets/echo-of-worlds.jpg
+wikidata: "[[Q134624471.yml]]"
 ---
 Following the events of Infinity Gate, two multiversal empires are at war, with mutual annihilation imminent. The untethered AI Rupshe has assembled a motley crew in a last-ditch attempt to prevent doomsday weapons from being unleashed. 
 

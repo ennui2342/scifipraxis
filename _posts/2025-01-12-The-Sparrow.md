@@ -11,6 +11,7 @@ writer: Mary Doria Russell
 cover: the-sparrow.png
 header:
   og_image: /assets/the-sparrow.png
+wikidata: "[[Q3224638.yml]]"
 ---
 A ragtag crew of Jesuit priests and their friends sets the tone for this amateur mission to an alien planet, landing without any real plan as if they're on a weekend camping trip. Unsurprisingly, dropping a group of untrained and over-privileged adults into a sensitive first-contact scenario doesn't go well.  
   

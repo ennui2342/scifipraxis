@@ -5,12 +5,14 @@ excerpt: 📚 Inverted World✒️ Christopher Priest (1974) ✨ 4/5 🛸 Metaph
 stars: 4
 tags:
   - Metaphysical
+  - Anthropological
 artist: Lucinda Cowell
 year: 1974
 writer: Christopher Priest
 cover: inverted-world.jpg
 header:
   og_image: /assets/inverted-world.jpg
+wikidata: "[[Q1623320.yml]]"
 ---
 Helward Mann is coming of age, moving out from his isolation in the city creche to join the guild system and take his place in the world - a world far stranger than he could ever imagine.
 

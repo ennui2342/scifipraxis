@@ -11,6 +11,7 @@ writer: Roger Zelazny
 cover: lord-of-light.png
 header:
   og_image: /assets/lord-of-light.png
+wikidata: "[[Q734976.yml]]"
 ---
 On the surface, this book appears to be a fantasy built around Hindu mythos. Along the way, there's a slow reveal of the science fiction underpinning of the story - the immortal gods are ancient colonists to this planet with advanced technologies that allow reincarnation and their powers. They rule over their descendants by suppressing technological progress, keeping them in a sustained dark age. One god is rebelling against this social order, seeking to tear down the deicracy and its worship by the introduction of Buddhism, science and technology.   
   
