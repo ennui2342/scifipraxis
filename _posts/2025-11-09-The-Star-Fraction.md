@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Star Fraction
-excerpt: 📚 The Star Fraction ✒️ Ken Macleod ✨ 3/5 🛸 Political Cyberpunk 🖌️ Angus McKie
+excerpt: 📚 The Star Fraction ✒️ Ken Macleod (1995) ✨ 3/5 🛸 Political Cyberpunk 🖌️ Angus McKie
 stars: 3
 tags:
   - Political
@@ -13,6 +13,7 @@ writer: Ken Macleod
 cover: the-star-fraction.jpg
 header:
   og_image: /assets/the-star-fraction.jpg
+wikidata: "[[Q15034603.yml]]"
 ---
 In the aftermath of World War III, the US/UN orbital platforms enforce an uneasy nuclear truce over the world. In the UK, the Republic has fallen, leaving a balkanised landscape of militarised polises touting every political ideology imaginable. Moh Kohn, a mercenary for hire, awakens an AI in the network triggering plans for a long-awaited revolution that will bring the Republic back to power.
 
