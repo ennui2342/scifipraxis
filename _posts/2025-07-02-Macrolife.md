@@ -12,6 +12,7 @@ cover: macrolife.jpg
 header:
   og_image: /assets/macrolife.jpg
 wikidata: "[[Q6725394.yml]]"
+description: A review of Macrolife by George Zebrowski (1945–2024), first published in 1979.
 ---
 Dandridge Cole coined the term macrolife to describe self-contained and mobile asteroid habitats that he envisioned as the fundamental units of life on the galactic stage. Zebrowski was clearly very taken by this idea, and his 1979 novel lays out a future history of humanity and macrolife in three parts.
 
