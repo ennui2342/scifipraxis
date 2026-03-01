@@ -11,6 +11,7 @@ writer: Norman Spinrad
 cover: bug-jack-baron.png
 header:
   og_image: /assets/bug-jack-baron.png
+wikidata: "[[Q3157123.yml]]"
 ---
 In at the new wave deep end...   
   
