@@ -13,6 +13,7 @@ cover: the-starry-rift.png
 header:
   og_image: /assets/the-starry-rift.png
 wikidata: "[[Q17028888.yml]]"
+description: A review of The Starry Rift by Alice Bradley Sheldon (1915–1987), first published in 1986.
 ---
 A composite novel featuring three linked stories set at humanity's galactic borderland. This was a disappointing first Tiptree read for me having expected better. The SF encyclopedia says her best work was in the 70s so maybe I just started in the wrong place.   
   
