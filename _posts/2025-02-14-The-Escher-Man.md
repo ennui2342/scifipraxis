@@ -1,13 +1,13 @@
 ---
 publish: true
 title: The Escher Man
-excerpt: 📚 The Escher Man ✒️  T. R. Napper (2024) ✨ 3/5 🛸 Dystopian 🖌️ Julia Lloyd
+excerpt: 📚 The Escher Man ✒️  T R Napper (2024) ✨ 3/5 🛸 Dystopian 🖌️ Julia Lloyd
 stars: 3
 tags:
   - Dystopia
 artist: Julia Lloyd
 year: 2024
-writer: T. R. Napper
+writer: T R Napper
 cover: the-escher-man.jpg
 header:
   og_image: /assets/the-escher-man.jpg
