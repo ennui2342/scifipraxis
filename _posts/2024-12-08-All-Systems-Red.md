@@ -13,6 +13,7 @@ cover: all-systems-red.png
 header:
   og_image: /assets/all-systems-red.png
 wikidata: "[[Q53828903.yml]]"
+description: A review of All Systems Red by Martha Wells (1964), first published in 2017. Winner of the Bob Morane award for best foreign novel (2020).
 ---
 A survey team is prospecting a planet with their trusty cyborg, little knowing that it had hacked its governing unit and was a free agent. Meanwhile, systems are experiencing strange glitches and there's something hostile about to pounce.  
   
