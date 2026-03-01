@@ -12,6 +12,7 @@ cover: the-carpet-makers.jpg
 header:
   og_image: /assets/the-carpet-makers.jpg
 wikidata: "[[Q615035.yml]]"
+description: A review of The Carpet Makers by Andreas Eschbach (1959), first published in 1995. Winner of the Grand Prix de l'Imaginaire for Best Foreign Novel (2001).
 ---
 Eighty thousand years ago a provincial galaxy was lost to the empire and all records mysteriously destroyed. After a rebellion overthrows the God-Emperor, the galaxy is rediscovered, which reveals whole planets dedicated solely to the production of hair carpets — each one taking its maker a lifetime to weave from human hair.
 
