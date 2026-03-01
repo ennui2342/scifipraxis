@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Shockwave Rider
-excerpt: 📚 The Shockwave Rider ✒️ John Brunner ✨ 2/5 🛸 Cyberpunk 🖌️ Eddie Jones
+excerpt: 📚 The Shockwave Rider ✒️ John Brunner (1975) ✨ 2/5 🛸 Cyberpunk 🖌️ Eddie Jones
 stars: 2
 tags:
   - The_Singularity
@@ -12,6 +12,7 @@ writer: John Brunner
 cover: the-shockwave-rider.jpg
 header:
   og_image: /assets/the-shockwave-rider.jpg
+wikidata: "[[Q353231.yml]]"
 ---
 Computers had barely started to be networked when Brunner's prescient 1975 Shockwave Rider foresaw the potential of ubiquitous digital networks for cultural toxicity and surveillance. This dystopian pre-cyberpunk vision is packed with ideas - coining the term computer worm over a decade before one was deployed, describing prediction markets that leverage the wisdom of the crowds, exploring the panoptic consequences of digital identity, and predicting fractured social cohesion in a world of peripatetic working.
 
