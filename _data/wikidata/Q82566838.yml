@@ -6,19 +6,20 @@ year: 2019
 genres:
   - science fiction
   - space opera
+series: Teixcalaan
 awards_won:
   - name: Hugo Award for Best Novel
     year: 2020
 awards_nominated:
-  - name: Locus Award for Best Science Fiction Novel
-    year: 2020
-  - name: Locus Award for Best First Novel
-    year: 2020
   - name: Nebula Award for Best Novel
     year: 2020
   - name: Arthur C. Clarke Award
     year: 2020
   - name: Kurd Lasswitz Award for Best Foreign Work
+    year: 2020
+  - name: Locus Award for Best First Novel
+    year: 2020
+  - name: Locus Award for Best Science Fiction Novel
     year: 2020
 authors:
   - name: Arkady Martine
