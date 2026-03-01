@@ -12,6 +12,7 @@ cover: annihilation.png
 header:
   og_image: /assets/annihilation.png
 wikidata: "[[Q16961640.yml]]"
+description: A review of Annihilation by Jeff VanderMeer (1968), first published in 2014. Winner of the Nebula Award for Best Novel (2015).
 ---
 As we follow the small expedition into Area X, Vandermeer builds tension and a sense of dislocation. The story feels tight and claustrophobic - a handful of characters across a few locations, the intimate first-person narrative, the lack of character names, and the slow reveal all paint a vivid picture of an eerie distorted reality.  
   
