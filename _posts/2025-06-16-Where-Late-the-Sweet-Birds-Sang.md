@@ -12,6 +12,7 @@ writer: Where Late the Sweet Birds Sang
 cover: where-late-the-sweet-birds-sang.jpg
 header:
   og_image: /assets/where-late-the-sweet-birds-sang.jpg
+wikidata: "[[Q3135306.yml]]"
 ---
 In Wilhelm's slow-motion quiet pastoral apocalypse (shades of Earth Abides), widespread infertility wipes out civilisation in a generation. A last community of preppers resort to cloning animals and themselves, but how much of our humanity has to be sacrificed so the species can survive?
 
