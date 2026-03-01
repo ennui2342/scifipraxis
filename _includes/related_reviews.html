@@ -1,0 +1,60 @@
+{% comment %}
+  Internal linking: other reviews by the same author, and other books in the same series.
+  Requires page.writer (author name) and optionally page.wikidata for series lookup.
+{% endcomment %}
+
+{% assign current_wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
+{% assign current_wd = site.data.wikidata[current_wikidata_key] %}
+{% assign current_series = current_wd.series %}
+
+{% comment %}Collect posts by same author{% endcomment %}
+{% assign author_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% unless post.url == page.url %}
+    {% if post.writer == page.writer %}
+      {% assign author_posts = author_posts | push: post %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %}Collect posts in same series{% endcomment %}
+{% assign series_posts = "" | split: "" %}
+{% if current_series and current_series != "" %}
+  {% for post in site.posts %}
+    {% unless post.url == page.url %}
+      {% assign post_wk = post.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
+      {% assign post_wd = site.data.wikidata[post_wk] %}
+      {% if post_wd.series == current_series %}
+        {% assign series_posts = series_posts | push: post %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% if author_posts.size > 0 or series_posts.size > 0 %}
+<nav class="related-reviews" aria-label="Related reviews">
+
+  {% if series_posts.size > 0 %}
+  <div class="related-reviews__section">
+    <h3 class="related-reviews__heading">Also in the {{ current_series }} series</h3>
+    <ul class="related-reviews__list">
+      {% for post in series_posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.stars %} <span class="related-reviews__stars">★ {{ post.stars }}/5</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if author_posts.size > 0 %}
+  <div class="related-reviews__section">
+    <h3 class="related-reviews__heading">More by {{ page.writer }}</h3>
+    <ul class="related-reviews__list">
+      {% for post in author_posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.stars %} <span class="related-reviews__stars">★ {{ post.stars }}/5</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+</nav>
+{% endif %}

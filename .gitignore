@@ -2,3 +2,10 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+
+# WebP files are generated in CI from the source JPG/PNG
+assets/*.webp
+
+# ISFDB pipeline
+.env
+/tmp/isfdb/

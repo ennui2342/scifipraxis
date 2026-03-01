@@ -1,0 +1,65 @@
+{% comment %}
+  JSON-LD structured data for book review posts.
+  Only emitted when page.writer is present (i.e. review posts, not About etc.)
+{% endcomment %}
+{% if page.writer %}
+
+{% assign wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
+{% assign wd = site.data.wikidata[wikidata_key] %}
+
+{% comment %}Build sameAs array for the book{% endcomment %}
+{% assign book_same_as = "" | split: "" %}
+{% if wd.wikipedia_url %}{% assign book_same_as = book_same_as | push: wd.wikipedia_url %}{% endif %}
+{% if wd.wikidata_url %}{% assign book_same_as = book_same_as | push: wd.wikidata_url %}{% endif %}
+
+{% comment %}Build award names array{% endcomment %}
+{% assign award_names = "" | split: "" %}
+{% if wd.awards_won %}
+  {% for award in wd.awards_won %}
+    {% assign award_names = award_names | push: award.name %}
+  {% endfor %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "datePublished": {{ page.date | date: "%Y-%m-%d" | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }}
+  },
+  {% if page.stars %}
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.stars }}",
+    "bestRating": "5"
+  },
+  {% endif %}
+  "itemReviewed": {
+    "@type": "Book",
+    "name": {{ page.title | jsonify }}
+    {% if wd %}
+      {% if wd.year %},"datePublished": "{{ wd.year }}"{% endif %}
+      {% if book_same_as.size > 0 %},"sameAs": {{ book_same_as | jsonify }}{% endif %}
+      {% if award_names.size > 0 %},"award": {{ award_names | jsonify }}{% endif %}
+      {% if wd.authors and wd.authors.size > 0 %}
+        {% assign a = wd.authors[0] %}
+        {% assign author_same_as = "" | split: "" %}
+        {% if a.wikipedia_url %}{% assign author_same_as = author_same_as | push: a.wikipedia_url %}{% endif %}
+        {% if a.wikidata_id %}
+          {% assign author_wikidata_url = "https://www.wikidata.org/wiki/" | append: a.wikidata_id %}
+          {% assign author_same_as = author_same_as | push: author_wikidata_url %}
+        {% endif %}
+        ,"author": {
+          "@type": "Person",
+          "name": {{ a.name | jsonify }}
+          {% if author_same_as.size > 0 %},"sameAs": {{ author_same_as | jsonify }}{% endif %}
+        }
+      {% endif %}
+    {% endif %}
+  }
+}
+</script>
+{% endif %}

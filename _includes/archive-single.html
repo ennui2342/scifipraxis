@@ -13,13 +13,21 @@
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
     {% if include.type == "list" and post.cover %}
+      {% assign cover_stem = post.cover | split: "." | first %}
       <div class="archive__item-thumbnail">
-        <img src="/assets/{{ post.cover }}" alt="">
+        <picture>
+          <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
+          <img src="/assets/{{ post.cover }}" alt="Cover of {{ post.title }}" loading="lazy">
+        </picture>
       </div>
     {% endif %}
     {% if include.type == "grid" and post.cover %}
+      {% assign cover_stem = post.cover | split: "." | first %}
       <div class="archive__item-teaser">
-        <img src="/assets/{{ post.cover }}" alt="">
+        <picture>
+          <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
+          <img src="/assets/{{ post.cover }}" alt="Cover of {{ post.title }}" loading="lazy">
+        </picture>
       </div>
     {% endif %}
     <div class"archive__item-content">
@@ -38,6 +46,7 @@
 			  🖌️ {{ post.artist }}</br>
 			  ✨ <span class="stars-container stars-{{ post.stars | times:20 | round: 0 }}" title="{{ post.stars }}/5">★★★★★</span></br>
 </p>
+<p class="archive__item-prose">{{ post.content | strip_html | truncatewords: 40 }}</p>
 		  </div>
     </div>
   </article>

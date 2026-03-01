@@ -37,7 +37,7 @@ layout: default
           <h1 id="page-title" class="page__title" itemprop="headline">
             <span property="name"><a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></span>
           </h1>
-	    <span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span>
+	    {% if page.stars %}<span class="stars-container stars-{{ page.stars | times:20 | round: 0 }}" title="{{ page.stars }}/5">★★★★★</span>{% endif %}
       </div>
           {%- endif %}
           {% include page__meta.html %}
@@ -54,8 +54,9 @@ layout: default
           </aside>
         {% endif %}
 
+          {% if page.writer %}
           <div class="book_info">
-		  {% if page.cover %}<div class="book_cover"><a href="{{ page.book-link }}" target="_blank"><img property="image" src="/assets/{{ page.cover }}" alt="Book cover for {{ page.title }}" /></a></div>{% endif %}
+		  {% if page.cover %}{% assign cover_stem = page.cover | split: "." | first %}<div class="book_cover"><a href="{{ page.book-link }}" target="_blank"><picture><source srcset="/assets/{{ cover_stem }}.webp" type="image/webp"><img property="image" src="/assets/{{ page.cover }}" alt="Book cover for {{ page.title }}" /></picture></a></div>{% endif %}
 		  <div class="book_meta">
 			  ✒️  {{ page.writer }} ({{ page.year }})</br>
 			  🛸 {{ page.tags | join: ", " | replace: '_', ' ' }}</br>
@@ -63,7 +64,21 @@ layout: default
 			  ✨ <span property="reviewRating" typeof="Rating"><span property="ratingValue">{{ page.stars }}</span></span>/5
 		  </div>
 	  </div>
+          {% endif %}
         {{ content }}
+
+        {% assign wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
+        {% if wikidata_key != "" %}
+          {% assign wikidata = site.data.wikidata[wikidata_key] %}
+          {% if wikidata %}
+            {% include wikidata_panel.html wikidata=wikidata %}
+          {% endif %}
+        {% endif %}
+
+        {% if page.writer %}
+          {% include related_reviews.html %}
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
@@ -95,6 +110,8 @@ layout: default
 
     </div>
   </article>
+
+  {% include jsonld.html %}
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}

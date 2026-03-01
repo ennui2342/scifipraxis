@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Mark Cheverton"
   avatar           : "/assets/images/avatar2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Reader, writer, collector"
+  bio              : "Reading through a backlog of modern and vintage science fiction — the award winners, the overlooked, and everything in between. Based in Cambridge, UK."
   location         : "Cambridge, UK"
   email            : "mark.cheverton@ecafe.org"
   links:
@@ -234,7 +234,7 @@ sass:
 
 # Outputting
 #permalink: /:categories/:title/
-permalink: date
+permalink: /reviews/:slug:output_ext
 timezone:    Europe/London
 
 

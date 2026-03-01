@@ -1,0 +1,59 @@
+{% comment %}
+  Wikidata bibliographic enrichment panel.
+  Usage: {% include wikidata_panel.html wikidata=wikidata %}
+  The wikidata variable is a hash from _data/wikidata/Q<id>.yml
+{% endcomment %}
+
+<section class="wikidata-panel">
+  <h2 class="wikidata-panel__title">About this book</h2>
+
+  <p>
+    <strong>{{ include.wikidata.title }}{% if include.wikidata.subtitle %}: {{ include.wikidata.subtitle }}{% endif %}</strong>
+    {% if include.wikidata.authors and include.wikidata.authors.size > 0 %}
+      {% for author in include.wikidata.authors %}
+        {% if forloop.first %}by{% else %}and{% endif %}
+        {% if author.wikipedia_url %}<a href="{{ author.wikipedia_url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}
+        {% if author.born %}({{ author.born }}{% if author.died %}–{{ author.died }}{% endif %}){% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if include.wikidata.year %}, first published in {{ include.wikidata.year }}{% endif %}.
+    {% if include.wikidata.series %}
+      Book {% if include.wikidata.series_position %}{{ include.wikidata.series_position }} of {% endif %}the {{ include.wikidata.series }} series.
+    {% endif %}
+  </p>
+
+  {% if include.wikidata.genres and include.wikidata.genres.size > 0 %}
+    <p><strong>Genres:</strong> {{ include.wikidata.genres | join: " &middot; " }}</p>
+  {% endif %}
+
+  {% if include.wikidata.awards_won and include.wikidata.awards_won.size > 0 %}
+    <p>
+      <strong>Awards:</strong>
+      {% for award in include.wikidata.awards_won %}
+        {{ award.name }}{% if award.year %} ({{ award.year }}){% endif %}{% unless forloop.last %} &middot; {% endunless %}
+      {% endfor %}.
+      {% if include.wikidata.awards_nominated and include.wikidata.awards_nominated.size > 0 %}
+        Also nominated for:
+        {% for award in include.wikidata.awards_nominated %}
+          {{ award.name }}{% if award.year %} ({{ award.year }}){% endif %}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}.
+      {% endif %}
+    </p>
+  {% elsif include.wikidata.awards_nominated and include.wikidata.awards_nominated.size > 0 %}
+    <p>
+      <strong>Nominated for:</strong>
+      {% for award in include.wikidata.awards_nominated %}
+        {{ award.name }}{% if award.year %} ({{ award.year }}){% endif %}{% unless forloop.last %} &middot; {% endunless %}
+      {% endfor %}.
+    </p>
+  {% endif %}
+
+  <p>
+    <strong>More information:</strong>
+    <a href="{{ include.wikidata.wikidata_url }}">Wikidata ↗</a>
+    {% if include.wikidata.wikipedia_url %} &middot; <a href="{{ include.wikidata.wikipedia_url }}">Wikipedia ↗</a>{% endif %}
+    {% if include.wikidata.isfdb_url %} &middot; <a href="{{ include.wikidata.isfdb_url }}">ISFDB ↗</a>{% endif %}
+    {% if include.wikidata.openlibrary_url %} &middot; <a href="{{ include.wikidata.openlibrary_url }}">Open Library ↗</a>{% endif %}
+    {% if include.wikidata.goodreads_url %} &middot; <a href="{{ include.wikidata.goodreads_url }}">Goodreads ↗</a>{% endif %}
+  </p>
+</section>

@@ -1,0 +1,61 @@
+name: Build and deploy Jekyll site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Convert new cover images to WebP
+        run: |
+          sudo apt-get install -y --no-install-recommends webp > /dev/null 2>&1
+          count=0
+          for f in assets/*.jpg assets/*.jpeg assets/*.png; do
+            [ -f "$f" ] || continue
+            stem="${f%.*}"
+            if [ ! -f "${stem}.webp" ]; then
+              cwebp -q 82 "$f" -o "${stem}.webp"
+              count=$((count + 1))
+            fi
+          done
+          echo "Converted $count image(s) to WebP"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,51 @@
+services:
+  jekyll:
+    image: ruby:3.2
+    working_dir: /site
+    environment:
+      BUNDLE_FORCE_RUBY_PLATFORM: "true"
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload"
+
+  mysql:
+    image: mysql:5.5
+    platform: linux/amd64   # MySQL 5.5 has no ARM image; works via Rosetta on Apple Silicon
+    environment:
+      MYSQL_ROOT_PASSWORD: isfdb
+      MYSQL_DATABASE: isfdb
+    # Disable zero-date rejection (ISFDB uses 0000-00-00 dates extensively)
+    # and configure full-text search for correct import
+    command: >
+      --sql-mode=
+      --ft-min-word-len=1
+      --ft-stopword-file=
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-pisfdb"]
+      interval: 5s
+      timeout: 10s
+      retries: 24   # up to 2 minutes for first start
+
+  updater:
+    build:
+      context: .
+      dockerfile: Dockerfile.updater
+    env_file: .env
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASS: isfdb
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+      - ./scripts:/app/scripts
+    command: ruby /app/scripts/update_isfdb_db.rb
+
+volumes:
+  bundle_cache:
