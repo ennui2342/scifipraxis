@@ -13,6 +13,7 @@ cover: firefall.png
 header:
   og_image: /assets/firefall.png
 wikidata: "[[Q58950296.yml]]"
+description: A review of Blindsight by Peter Watts (1958), first published in 2006.
 ---
 In an era where the quotidian human is made worthless by AI, only the divergent have value - those with with skills way beyond the standard deviation. Theseus' crew is an elite band of the schizophrenic, vampiric, autistic, and augmented. I started doubtful that this setup was realistic, but by the end, I was convinced you couldn't do it any other way! This is first contact as it really might be - no helpful clues, no friendly aliens, just a crew stumbling about pressing buttons, working out the box, and trying to find patterns in the noise.   
   
