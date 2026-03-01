@@ -11,6 +11,7 @@ writer: Yoon Ha Lee
 cover: ninefox-gambit.png
 header:
   og_image: /assets/ninefox-gambit.png
+wikidata: "[[Q56307799.yml]]"
 ---
 From the first page, the deluge of barely explained and poetically named weapons with magical effects was a little overwhelming until I stopped trying to figure it out and just let it wash over me. In places it was a bit too Borderlands (amputation guns), but if you're not taking it too seriously it's entertaining.   
   
