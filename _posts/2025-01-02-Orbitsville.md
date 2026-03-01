@@ -12,6 +12,7 @@ cover: orbitsville.png
 header:
   og_image: /assets/orbitsville.png
 wikidata: "[[Q7100118.yml]]"
+description: A review of Orbitsville by Bob Shaw (1931–1996), first published in 1975. Winner of the BSFA Award for Best Novel (1975).
 ---
 With Ringwold and Rama kicking off the 70s, Shaw joins the party with his Big Dumb Object - Orbitsville - a Dyson sphere with a surface area of five billion Earths.  
   
