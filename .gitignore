@@ -3,6 +3,8 @@ _site
 .jekyll-metadata
 Gemfile.lock
 
+CLAUDE.md
+
 # WebP files are generated in CI from the source JPG/PNG
 assets/*.webp
 
