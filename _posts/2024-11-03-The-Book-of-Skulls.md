@@ -11,6 +11,7 @@ writer: Robert Silverberg
 cover: the-book-of-skulls.png
 header:
   og_image: /assets/the-book-of-skulls.png
+wikidata: "[[Q1132953.yml]]"
 ---
 Four students seek out an ancient immortality cult, but the price of eternal life is that two must die. The story is told from the first-person perspective of each of the four - chapter by chapter we rotate around the group, gradually fleshing out their initial stereotypes with rich, twisted backstories. Despite the hook, this is 100% a character-centric story, with little exploration of the SF/fantasy premise.    
   
