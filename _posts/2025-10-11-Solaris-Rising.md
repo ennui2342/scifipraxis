@@ -12,6 +12,7 @@ cover: solaris-rising.jpg
 header:
   og_image: /assets/solaris-rising.jpg
 wikidata: "[[Q135093195.yml]]"
+description: A review of Solaris Rising, first published in 2012.
 ---
 I've not had much luck with anthologies, usually only finding one or two stories I enjoy among a sea of dross. I've had Solaris Rising on my TBR since I picked it up from Solaris Books at the London Worldcon, and I should have read it sooner! It's a breath of fresh air, packed full of great stories, and a sprinkle of outstanding — highly recommended. Here are the highlights:
 
