@@ -13,6 +13,7 @@ cover: this-alien-shore.jpg
 header:
   og_image: /assets/this-alien-shore.jpg
 wikidata: "[[Q7785596.yml]]"
+description: A review of This Alien Shore by Celia S. Friedman (1957), first published in 1998.
 ---
 After the first wave of interstellar expansion resulted in extensive genetic mutations, Earth abandoned spaceflight and its fledgling colonies. Now, humanity has returned to the stars via the Ainniq, a rift in space that only mutated Guerans can navigate, giving their guild a stranglehold on space travel.
 
