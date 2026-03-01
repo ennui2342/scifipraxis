@@ -13,6 +13,7 @@ cover: cats-cradle.png
 header:
   og_image: /assets/cats-cradle.png
 wikidata: "[[Q41359.yml]]"
+description: A review of Cat's cradle by Kurt Vonnegut (1922–2007), first published in 1963.
 ---
 Written at the time of the Cuban missile crisis, Cat's Cradle is a cautionary tale of ice-nine - a world-ending technology that will crystalise all water into a new state. Don't expect an action thriller - this is a typical Vonnegut novel where the characters are mostly clueless idiots for whom things aren't going to turn out well. The novel isn't about saving the world; it's about how science and religion are putting power into the hands of those ill-equipped to handle it.  
   
