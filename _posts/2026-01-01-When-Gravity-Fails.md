@@ -13,6 +13,7 @@ cover: when-gravity-fails.jpg
 header:
   og_image: /assets/when-gravity-fails.jpg
 wikidata: "[[Q3115799.yml]]"
+description: A review of When Gravity Fails by George Alec Effinger (1947–2002), first published in 1987.
 ---
 Marîd Audran is a street-smart grifter living in a future Middle Eastern ghetto. When his latest client is murdered, he becomes a reluctant detective delving into the seedy underbelly of the Budayeen to hunt down a serial killer.
 
