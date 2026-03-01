@@ -1,10 +1,27 @@
-{% comment %}Recent posts from any author, excluding current{% endcomment %}
-{% assign enjoy_posts = "" | split: "" %}
+{% comment %}
+  Tag-matched recommendations: posts sharing tags with current page appear first,
+  then fill remaining slots with other recent posts.
+{% endcomment %}
+{% assign matched_posts = "" | split: "" %}
+{% assign other_posts = "" | split: "" %}
+
 {% for post in site.posts %}
   {% unless post.url == page.url %}
-    {% assign enjoy_posts = enjoy_posts | push: post %}
+    {% assign shared = 0 %}
+    {% for tag in page.tags %}
+      {% if post.tags contains tag %}
+        {% assign shared = shared | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if shared > 0 %}
+      {% assign matched_posts = matched_posts | push: post %}
+    {% else %}
+      {% assign other_posts = other_posts | push: post %}
+    {% endif %}
   {% endunless %}
 {% endfor %}
+
+{% assign enjoy_posts = matched_posts | concat: other_posts %}
 
 {% if enjoy_posts.size > 0 %}
 <div class="you-might-enjoy">
