@@ -12,6 +12,7 @@ cover: the-wanderer.png
 header:
   og_image: /assets/the-wanderer.png
 wikidata: "[[Q3227984.yml]]"
+description: A review of The Wanderer by Fritz Leiber (1910–1992), first published in 1964. Winner of the Hugo Award for Best Novel (1965).
 ---
 This one was high on my TBR as it has appeared on several lists of the classics in the genre. Unfortunately, the novel didn't follow through with the promise, and I was hard-pressed to make it through. 
   
