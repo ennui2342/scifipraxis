@@ -13,6 +13,7 @@ cover: a-hole-in-the-sky.jpg
 header:
   og_image: /assets/a-hole-in-the-sky.jpg
 wikidata: "[[Q135188016.yml]]"
+description: A review of A Hole in the Sky by Peter F. Hamilton (1960).
 ---
 Hamilton's latest YA trilogy is a bit of a departure from his space operatic doorstops. In his 400-page opening novel, we follow the coming-of-age story of Hazel, growing up in a generation ship's fallen agrarian population. Five centuries ago, a mutiny wrecked the machines and left the survivors under the 'electronic captains' rule.
 
