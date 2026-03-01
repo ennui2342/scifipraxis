@@ -13,6 +13,7 @@ cover: the-pride-of-chanur.jpg
 header:
   og_image: /assets/the-pride-of-chanur.jpg
 wikidata: "[[Q57272114.yml]]"
+description: A review of The Pride of Chanur by C. J. Cherryh (1942), first published in 1982.
 ---
 An unknown alien species seeks refuge on a freighter of the Hani, escaping the abuse of its Kif captors. As fighting flares between the Kif and Hani over ownership of the seemingly sentient outsider, the fragile political Compact is pushed to the brink of collapse, spreading unrest from station to station.
 
