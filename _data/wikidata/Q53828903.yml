@@ -5,16 +5,17 @@ title: All Systems Red
 year: 2017
 genres:
   - science fiction
+series: The Murderbot Diaries
 awards_won:
+  - name: Bob Morane award for best foreign novel
+    year: 2020
+  - name: Ignotus Award for Best Foreign Short Story
+    year: 2020
+  - name: Hugo Award for Best Novella
+    year: 2018
   - name: Locus Award for Best Novella
     year: 2018
   - name: Nebula Award for Best Novella
-    year: 2018
-  - name: Ignotus Award for Best Foreign Short Story
-    year: 2020
-  - name: Bob Morane award for best foreign novel
-    year: 2020
-  - name: Hugo Award for Best Novella
     year: 2018
 awards_nominated:
   - name: Prometheus Award
