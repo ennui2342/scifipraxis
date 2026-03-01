@@ -12,6 +12,7 @@ writer: Barry N. Malzberg
 cover: guernica-night.jpg
 header:
   og_image: /assets/guernica-night.jpg
+wikidata: "[[Q122452520.yml]]"
 ---
 What happens when a society loses all purpose? The invention of the transporter has enabled instantaneous travel around the planet, but as a consequence, the world has become homogeneous. Suicide, known as the Final Trip, is endemic among bored young people ruled over by an authoritarian government.
 
