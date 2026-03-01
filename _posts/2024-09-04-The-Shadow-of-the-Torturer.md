@@ -12,6 +12,7 @@ writer: Gene Wolfe
 cover: the-shadow-of-the-torturer.png
 header:
   og_image: /assets/the-shadow-of-the-torturer.png
+wikidata: "[[Q1150125.yml]]"
 ---
 A book of two halves for me. The first half sets up the protagonist as a slightly insane apprentice torturer along with a couple of promising plotlines around an aristocratic client and a swashbuckling rebel. The citadel in which the torturers practice their art is also as much a character in this early part, reminiscent of Ghormanghast and replete with mystery and strange characters to explore.  
 
