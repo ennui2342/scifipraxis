@@ -10,7 +10,17 @@ services:
     ports:
       - "4000:4000"
       - "35729:35729"
-    command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload"
+    command: >
+      bash -c "
+        apt-get update -qq && apt-get install -y --no-install-recommends webp > /dev/null 2>&1 &&
+        for f in assets/*.jpg assets/*.jpeg assets/*.png; do
+          [ -f \"$$f\" ] || continue;
+          stem=\"$${f%.*}\";
+          [ -f \"$${stem}.webp\" ] || cwebp -q 82 \"$$f\" -o \"$${stem}.webp\" -quiet;
+        done &&
+        bundle install &&
+        bundle exec jekyll serve --host 0.0.0.0 --livereload
+      "
 
   mysql:
     image: mysql:5.5
