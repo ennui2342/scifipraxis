@@ -13,6 +13,7 @@ cover: seven-surrenders.jpg
 header:
   og_image: /assets/seven-surrenders.jpg
 wikidata: "[[Q29649673.yml]]"
+description: A review of Seven Surrenders by Ada Palmer (1981), first published in 2017.
 ---
 The world accelerates towards conflict as the revelations of corruption in the seven factions of humanity threaten to end three hundred years of near-utopia. In a post-scarcity world with no memory of warfare and no borders, the consequences for civilisation could be existential.
 
