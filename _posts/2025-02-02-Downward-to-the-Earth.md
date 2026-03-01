@@ -11,6 +11,7 @@ writer: Robert Silverberg
 cover: downward-to-the-earth.png
 header:
   og_image: /assets/downward-to-the-earth.png
+wikidata: "[[Q3234927.yml]]"
 ---
 Gundersen returns to the decolonised planet Belzagor, wrestling with his prejudices towards the native elephantine Nildoror whom he treated as little more than animals while he was administrator. He embarks on a journey of self-discovery with his Nildororian travelling companion, heading to the pilgrimage site of the aliens' mysterious rebirth ceremony.  
   
