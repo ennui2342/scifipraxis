@@ -14,6 +14,7 @@ cover: camp-concentration.jpg
 header:
   og_image: /assets/camp-concentration.jpg
 wikidata: "[[Q3654602.yml]]"
+description: A review of Camp Concentration by Thomas M. Disch (1940–2008), first published in 1968.
 ---
 Somewhere under the desert lies Camp Archimedes, a government institute populated with convicts and deserters. Infected by Pallidine, a strain of syphilis that bestows genius, they're paying a terrible price for transcendence.
 
