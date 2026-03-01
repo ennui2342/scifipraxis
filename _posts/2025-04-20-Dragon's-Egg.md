@@ -12,6 +12,7 @@ cover: dragons-egg.jpg
 header:
   og_image: /assets/dragons-egg.jpg
 wikidata: "[[Q3205839.yml]]"
+description: A review of Dragon's Egg by Robert L. Forward (1932–2002), first published in 1980. Winner of the Seiun Award for Best Translated Long Work (1983).
 ---
 A neutron star remnant from a nearby supernova is heading for a flyby of the solar system. An expedition is mounted to study the star, the titular Dragon's Egg, but discovers primitive life has evolved on its surface, living and evolving at a speed millions of times faster than human time.
 
