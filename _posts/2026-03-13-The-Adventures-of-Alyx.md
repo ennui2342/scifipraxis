@@ -15,7 +15,7 @@ header:
 wikidata: "[[Q7712491.yml]]"
 description: A review of The Adventures of Alyx by Joanna Russ (1937–2011), first published in 1976.
 ---
-This collection follows Alyx, an ancient Greek woman whose life as a thief, assassin, and barbarian provides raw material for a string of exciting adventures. While there is an underlying SF rationale, the narrative is firmly sword-and-sorcery as Alyx brute-forces her way through most situations with a well-placed dagger and her keen intelligence.
+This collection follows Alyx, an ancient Greek woman whose life as a thief, assassin, and barbarian provides raw material for a string of exciting adventures. While there is an underlying SF rationale, the plotting is firmly sword-and-sorcery as Alyx brute-forces her way through most situations with a well-placed dagger and her keen intelligence.
 
 Written '67-'70, the tales predate Russ' later significant work, but even so, Russ' strong character development is already evident. While second-wave feminist themes are inherent in Alyx's outsider life story, there's also a leitmotif of Alyx navigating complex relationships with the young female protégées she encounters. 
 
