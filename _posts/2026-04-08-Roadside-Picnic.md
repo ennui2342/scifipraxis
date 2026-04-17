@@ -14,7 +14,7 @@ header:
 wikidata: "[[Q848517.yml]]"
 description: A review of Roadside Picnic by Arkady and Boris Strugatsky, first published in 1972.
 ---
-Aliens have been and gone, leaving technological detritus behind in surreal liminal zones. The fantastical properties of this mysterious litter make it highly valuable, attracting grifters, smugglers, and the Stalkers who risk their lives to acquire it.
+Aliens have been and gone, leaving their technological detritus behind in surreal liminal zones. The fantastical properties of this mysterious litter make it highly valuable, attracting grifters, smugglers, and the Stalkers who risk their lives to acquire it.
 
 What might appear a boon for humanity is degraded and corrupted by our self-interested nihilism. The zone's accreted community is a grubby capitalist mess - a Wild West of corruption, criminals, and the dispossessed, yearning for riches, but creating ruin.
 
