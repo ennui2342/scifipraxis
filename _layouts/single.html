@@ -3,12 +3,7 @@ layout: default
 ---
 
 <div id="main" role="main">
-  <article class="page" itemscope itemtype="https://schema.org/Review"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if site.author.name %}<span itemprop="author" itemscope itemtype="https://schema.org/Person" hidden><meta itemprop="name" content="{{ site.author.name }}"></span>{% endif %}
-    {% if page.stars %}<span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" hidden><meta itemprop="ratingValue" content="{{ page.stars }}"><meta itemprop="bestRating" content="5"></span>{% endif %}
+  <article class="page"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
 
     {% assign wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
     {% if wikidata_key != "" %}
@@ -22,13 +17,13 @@ layout: default
       <div class="post-cover">
         <picture>
           <source srcset="/assets/{{ cover_stem }}.webp" type="image/webp">
-          <img itemprop="image" src="/assets/{{ page.cover }}" alt="Cover of {{ page.title }}">
+          <img src="/assets/{{ page.cover }}" alt="Cover of {{ page.title }}">
         </picture>
       </div>
       {% endif %}
 
       <div class="post-right">
-        <div class="post-info" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Book">
+        <div class="post-info">
           <div class="post-meta__tags">
             {% for tag in page.tags %}
             <a class="post-meta__tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag | replace: '_', ' ' }}</a>
@@ -38,7 +33,7 @@ layout: default
             {% endif %}
           </div>
 
-          <h1 class="post-title" itemprop="name">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+          <h1 class="post-title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
 
           {% if page.stars %}
           {% assign stars_filled = page.stars | floor %}
@@ -49,16 +44,14 @@ layout: default
           {% endif %}
 
           <div class="post-byline">
-            <strong itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <span itemprop="name">{{ page.writer }}</span>
-            </strong>
+            <strong>{{ page.writer }}</strong>
             {% if page.year %}&middot; {{ page.year }}{% endif %}<br>
             {% if page.artist %}Cover by {{ page.artist }}{% endif %}
           </div>
         </div>
 
         <!-- Review body flows directly from metadata -->
-        <div class="post-body page__content" itemprop="reviewBody">
+        <div class="post-body page__content">
           {{ content }}
         </div>
       </div>
