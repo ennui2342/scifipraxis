@@ -7,6 +7,8 @@ layout: default
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if site.author.name %}<span itemprop="author" itemscope itemtype="https://schema.org/Person" hidden><meta itemprop="name" content="{{ site.author.name }}"></span>{% endif %}
+    {% if page.stars %}<span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" hidden><meta itemprop="ratingValue" content="{{ page.stars }}"><meta itemprop="bestRating" content="5"></span>{% endif %}
 
     {% assign wikidata_key = page.wikidata | remove: "[[" | remove: "]]" | remove: ".yml" %}
     {% if wikidata_key != "" %}
@@ -41,9 +43,7 @@ layout: default
           {% if page.stars %}
           {% assign stars_filled = page.stars | floor %}
           {% assign stars_empty = 5 | minus: stars_filled %}
-          <div class="post-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-            <meta itemprop="ratingValue" content="{{ page.stars }}">
-            <meta itemprop="bestRating" content="5">
+          <div class="post-stars">
             {% for i in (1..stars_filled) %}★{% endfor %}{% for i in (1..stars_empty) %}☆{% endfor %}
           </div>
           {% endif %}
