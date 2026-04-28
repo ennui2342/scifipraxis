@@ -17,7 +17,7 @@ header:
 wikidata: "[[Q605249.yml]]"
 description: A review of Do Androids Dream of Electric Sheep? by Philip K. Dick (1928–1982), first published in 1968. Winner of the NPR Top 100 Science Fiction and Fantasy Books (2011).
 ---
-Deckard hunts rogue androids that, with every new model, become harder to identify and harder to regard as artificial. He relies on an empathy test to catch them, but when humans use 'Mood Organs' to induce emotions, asking whether machines have empathy becomes the wrong question; rather, is empathy a legitimate, or even meaningful, measure of humanity?
+Deckard is a hunter of rogue androids that, with every new model, become harder to identify and harder to regard as artificial. He relies on an empathy test to catch them, but when humans use 'Mood Organs' to induce emotions, asking whether machines have empathy becomes the wrong question; rather, is empathy a legitimate, or even meaningful, measure of humanity?
 
 Emotions have become consumer goods, like the animals that are now so rare that owning one is a measure of status, each with its precise market value. Deckard isn't rich enough to own a real animal, making do with an electric sheep, an indistinguishable faux substitute. But fidelity isn't enough; status and worth are grounded in an increasingly arbitrary definition of real.
 
