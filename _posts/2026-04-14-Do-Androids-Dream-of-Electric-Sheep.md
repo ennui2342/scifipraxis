@@ -14,8 +14,8 @@ writer: Philip K. Dick
 cover: do-androids-dream-of-electric-sheep.jpg
 header:
   og_image: /assets/do-androids-dream-of-electric-sheep.jpg
-wikidata: "[[Q113378404.yml]]"
-description: A review of Do Androids Dream of Electric Sheep? by Philip K. Dick (1928–1982), first published in 1968.
+wikidata: "[[Q605249.yml]]"
+description: A review of Do Androids Dream of Electric Sheep? by Philip K. Dick (1928–1982), first published in 1968. Winner of the NPR Top 100 Science Fiction and Fantasy Books (2011).
 ---
 Deckard hunts rogue androids that, with every new model, become harder to identify and harder to regard as artificial. He relies on an empathy test to catch them, but when humans use 'Mood Organs' to induce emotions, asking whether machines have empathy becomes the wrong question; rather, is empathy a legitimate, or even meaningful, measure of humanity?
 
