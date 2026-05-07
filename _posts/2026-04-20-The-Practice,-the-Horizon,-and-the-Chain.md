@@ -13,6 +13,8 @@ writer: Sofia Samatar
 cover: the-practice-the-horizon-and-the-chain.jpg
 header:
   og_image: /assets/the-practice-the-horizon-and-the-chain.jpg
+wikidata: "[[Q133843122.yml]]"
+description: A review of The Practice, the Horizon, and the Chain by Sofia Samatar (1971), first published in 2024.
 ---
 A boy, condemned by birth to a life of hard labour, is elevated from his servitude to live in comparative luxury. His sponsor has bet her career on reviving the tradition of elevation, but things aren't going as easily as she expected — the boy doesn't seem to want his new life.
 
