@@ -11,6 +11,8 @@ writer: C. J. Cherryh
 cover: inheritor.jpg
 header:
   og_image: /assets/inheritor.jpg
+wikidata: "[[Q27791748.yml]]"
+description: A review of Inheritor by C. J. Cherryh (1942), first published in 1996.
 ---
 At this point in the series I don't think Cherryh cares to pander; readers know exactly what they're signed on for. The first hundred pages are pure internal monologue, deconstructing the political problem until every detail is exhausted and I started to wonder whether the book would ever begin. Then it just carries on like that.
 
