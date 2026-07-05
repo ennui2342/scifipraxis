@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Practice, the Horizon, and the Chain
-excerpt: 📚 The Practice, the Horizon, and the Chain ✒️ Sofia Samatar ✨ 3/5 🛸 Sociological 🖌️ Jamie Stafford-Hill
+excerpt: 📚 The Practice, the Horizon, and the Chain ✒️ Sofia Samatar (2024) ✨ 3/5 🛸 Sociological 🖌️ Jamie Stafford-Hill
 stars: 3
 tags:
   - Generation_Ship
