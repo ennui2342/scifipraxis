@@ -20,6 +20,12 @@
   {% endfor %}
 {% endif %}
 
+{% comment %}Build sameAs array for the reviewer, from site.author.links{% endcomment %}
+{% assign reviewer_same_as = "" | split: "" %}
+{% for link in site.author.links %}
+  {% if link.url %}{% assign reviewer_same_as = reviewer_same_as | push: link.url %}{% endif %}
+{% endfor %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,6 +35,7 @@
   "author": {
     "@type": "Person",
     "name": {{ site.author.name | jsonify }}
+    {% if reviewer_same_as.size > 0 %},"sameAs": {{ reviewer_same_as | jsonify }}{% endif %}
   },
   {% if page.stars %}
   "reviewRating": {
@@ -40,6 +47,7 @@
   "itemReviewed": {
     "@type": "Book",
     "name": {{ page.title | jsonify }}
+    {% if page.cover %},"image": {{ '/assets/' | append: page.cover | absolute_url | jsonify }}{% endif %}
     {% if wd %}
       {% if wd.year %},"datePublished": "{{ wd.year }}"{% endif %}
       {% if book_same_as.size > 0 %},"sameAs": {{ book_same_as | jsonify }}{% endif %}
@@ -60,6 +68,27 @@
       {% endif %}
     {% endif %}
   }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": {{ site.title | jsonify }},
+      "item": {{ "/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }
+  ]
 }
 </script>
 {% endif %}
