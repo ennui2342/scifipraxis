@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Immeasurable Heaven
-excerpt: 📚 The Immeasurable Heaven ✒️ Caspar Geon ✨ 4/5 🛸 Space Opera 🖌️ Rebellion
+excerpt: 📚 The Immeasurable Heaven ✒️ Caspar Geon (2025) ✨ 4/5 🛸 Space Opera 🖌️ Rebellion
 stars: 4
 tags:
   - Multiverse
