@@ -4,8 +4,8 @@ title: Where Late the Sweet Birds Sang
 excerpt: 📚 Where Late the Sweet Birds Sang ✒️ Kate Wilhelm (1976) ✨ 5/5 🛸 Post-apocalyptic 🖌️ Ed Soyka
 stars: 5
 tags:
-  - Post-apocalyptic
   - Cloning
+  - Apocalyptic
 artist: Ed Soyka
 year: 1976
 writer: Where Late the Sweet Birds Sang
