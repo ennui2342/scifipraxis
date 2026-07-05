@@ -4,7 +4,7 @@ title: The Wanderer
 excerpt: 📚 The Wanderer ✒️ Fritz Leiber (1964)  ✨ 1/5 🛸 Disaster 🖌️ Uncredited
 stars: 1
 tags:
-  - Apocolyptic
+  - Apocalyptic
 artist: Uncredited
 year: 1964
 writer: Fritz Leiber
