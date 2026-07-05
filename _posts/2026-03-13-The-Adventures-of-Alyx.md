@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Adventures of Alyx
-excerpt: 📚 The Adventures of Alyx ✒️ Joanna Russ ✨ 3/5 🛸 Adventure 🖌️ Judith Clute
+excerpt: 📚 The Adventures of Alyx ✒️ Joanna Russ (1976) ✨ 3/5 🛸 Adventure 🖌️ Judith Clute
 stars: 3
 tags:
   - Adventure

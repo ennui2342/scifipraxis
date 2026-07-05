@@ -5,8 +5,8 @@ excerpt: 📚 How I Killed the Universal Man ✒️ Thomas Kendall (2023) ✨ 3/
 stars: 3
 tags:
   - Posthuman
-  - New_Wierd
   - Noir
+  - New_Weird
 artist: Shaw
 year: 2023
 writer: Thomas Kendall

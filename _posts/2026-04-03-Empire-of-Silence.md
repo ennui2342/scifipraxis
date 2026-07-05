@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Empire of Silence
-excerpt: 📚 Empire of Silence ✒️ Christopher Ruocchio ✨ 4/5 🛸 Space Opera 🖌️ Patrick Knowles
+excerpt: 📚 Empire of Silence ✒️ Christopher Ruocchio (2018) ✨ 4/5 🛸 Space Opera 🖌️ Patrick Knowles
 stars: 4
 tags:
   - Space_Opera

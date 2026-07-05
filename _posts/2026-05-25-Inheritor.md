@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Inheritor
-excerpt: 📚 Inheritor ✒️ C. J. Cherryh ✨ 3/5 🛸 Political 🖌️ Dorian Vallejo
+excerpt: 📚 Inheritor ✒️ C. J. Cherryh (1996) ✨ 3/5 🛸 Political 🖌️ Dorian Vallejo
 stars: 3
 tags:
   - Political
