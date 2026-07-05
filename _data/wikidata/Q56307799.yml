@@ -3,15 +3,14 @@ wikidata_url: "https://www.wikidata.org/wiki/Q56307799"
 title: Ninefox Gambit
 year: 2016
 genres:
-  - space opera
   - science fiction
+  - space opera
   - military science fiction
+series: Machineries of Empire
 awards_won:
   - name: Locus Award for Best First Novel
     year: 2017
 awards_nominated:
-  - name: Arthur C. Clarke Award
-    year: 2017
   - name: Compton Crook Award
     year: 2017
   - name: Locus Award for Best First Novel
@@ -21,6 +20,8 @@ awards_nominated:
   - name: Locus Award for Best Science Fiction Novel
     year: 2017
   - name: Nebula Award for Best Novel
+    year: 2017
+  - name: Arthur C. Clarke Award
     year: 2017
 authors:
   - name: Yoon Ha Lee
