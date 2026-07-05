@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Aztec Century
-excerpt: 📚 Aztec Century ✒️ Christopher Evans ✨ 3/5 🛸 Alternate History 🖌️ Mark Taylor
+excerpt: 📚 Aztec Century ✒️ Christopher Evans (1993) ✨ 3/5 🛸 Alternate History 🖌️ Mark Taylor
 stars: 3
 tags:
   - Alternate_History
