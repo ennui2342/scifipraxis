@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Starship Fall
-excerpt: 📚 Starship Fall ✒️ Eric Brown ✨ 4/5 🛸 Anthropological 🖌️ Dominic Harman
+excerpt: 📚 Starship Fall ✒️ Eric Brown (2009) ✨ 4/5 🛸 Anthropological 🖌️ Dominic Harman
 stars: 4
 tags:
   - Anthropological

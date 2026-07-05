@@ -5,7 +5,7 @@ excerpt: 📚 All That We See or Seem ✒️ Ken Liu (2025) ✨ 3/5 🛸 AI Tech
 stars: 3
 tags:
   - AI
-  - Techo-thriller
+  - Techno-thriller
 artist: Uncredited
 year: 2025
 writer: Ken Liu

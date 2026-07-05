@@ -29,7 +29,7 @@ Argues that special effects in SF cinema have replaced the cognitive exploration
 
 The Urban Question in New Wave SF, Rob Latham ⭐⭐⭐⭐
 
-The economic shocks of the 70s lead to collapse, defunding, and waves of privatisation. New wave urban dystopias and technocratic monumentalism were a reaction to the crisis of capitalist urbanism, characterised by the extreme es of development and decay, progress and poverty. 
+The economic shocks of the 70s lead to collapse, defunding, and waves of privatisation. New wave urban dystopias and technocratic monumentalism were a reaction to the crisis of capitalist urbanism, characterised by the extremes of development and decay, progress and poverty. 
 
 Utopian Art and Art in Utopia in The Dispossessed and Blue Mars, William J Burling ⭐⭐⭐
 

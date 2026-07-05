@@ -5,7 +5,7 @@ excerpt: 📚 Cat's cradle ✒️ Kurt Vonnegut (1963)  ✨ 5/5 🛸 End of the
 stars: 5
 tags:
   - Satire
-  - Apocolyptic
+  - Apocalyptic
 artist: Julian House
 year: 1963
 writer: Kurt Vonnegut

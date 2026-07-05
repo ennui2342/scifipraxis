@@ -5,7 +5,7 @@ excerpt: 📚 The New Weird✒️ Ann & Jeff VanderMeer (2008) ✨ 3/5 🛸  �
 stars: 3
 tags:
   - Anthology
-  - New_Wierd
+  - New_Weird
 artist: Ann Monn
 year: 2008
 writer: Ann & Jeff VanderMeer
