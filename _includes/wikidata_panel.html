@@ -20,7 +20,7 @@
     <div class="bib-item__label">Author</div>
     <div class="bib-item__value">
       {% if author.wikipedia_url %}<a href="{{ author.wikipedia_url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}
-      {% if author.born %}({{ author.born }}){% endif %}
+      {% if author.born %}({{ author.born }}{% if author.died %}–{{ author.died }}{% endif %}){% endif %}
     </div>
   </div>
   {% endfor %}
@@ -33,17 +33,15 @@
   </div>
   {% endif %}
 
-  {% if wd.openlibrary_id %}
+  {% if wd.openlibrary_id or wd.isfdb_id or wd.goodreads_id %}
   <div class="bib-item">
-    <div class="bib-item__label">Open Library</div>
-    <div class="bib-item__value"><a href="{{ wd.openlibrary_url }}">{{ wd.openlibrary_id }}</a></div>
-  </div>
-  {% endif %}
-
-  {% if wd.isfdb_id %}
-  <div class="bib-item">
-    <div class="bib-item__label">ISFDB</div>
-    <div class="bib-item__value"><a href="{{ wd.isfdb_url }}">Title #{{ wd.isfdb_id }}</a></div>
+    <div class="bib-item__label">External Links</div>
+    <div class="bib-item__value">
+      {% assign shown_a_link = false %}
+      {% if wd.openlibrary_id %}<a href="{{ wd.openlibrary_url }}">Open Library</a>{% assign shown_a_link = true %}{% endif %}
+      {% if wd.isfdb_id %}{% if shown_a_link %} · {% endif %}<a href="{{ wd.isfdb_url }}">ISFDB</a>{% assign shown_a_link = true %}{% endif %}
+      {% if wd.goodreads_id %}{% if shown_a_link %} · {% endif %}<a href="{{ wd.goodreads_url }}">Goodreads</a>{% endif %}
+    </div>
   </div>
   {% endif %}
 

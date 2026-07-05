@@ -11,6 +11,9 @@
 {% assign book_same_as = "" | split: "" %}
 {% if wd.wikipedia_url %}{% assign book_same_as = book_same_as | push: wd.wikipedia_url %}{% endif %}
 {% if wd.wikidata_url %}{% assign book_same_as = book_same_as | push: wd.wikidata_url %}{% endif %}
+{% if wd.isfdb_url %}{% assign book_same_as = book_same_as | push: wd.isfdb_url %}{% endif %}
+{% if wd.openlibrary_url %}{% assign book_same_as = book_same_as | push: wd.openlibrary_url %}{% endif %}
+{% if wd.goodreads_url %}{% assign book_same_as = book_same_as | push: wd.goodreads_url %}{% endif %}
 
 {% comment %}Build award names array{% endcomment %}
 {% assign award_names = "" | split: "" %}
@@ -25,6 +28,17 @@
 {% for link in site.author.links %}
   {% if link.url %}{% assign reviewer_same_as = reviewer_same_as | push: link.url %}{% endif %}
 {% endfor %}
+
+{% comment %}Build genre array: prefer Wikidata's genres, fall back to post tags{% endcomment %}
+{% assign genre_list = "" | split: "" %}
+{% if wd.genres and wd.genres.size > 0 %}
+  {% assign genre_list = wd.genres %}
+{% else %}
+  {% for t in page.tags %}
+    {% assign clean_tag = t | replace: "_", " " %}
+    {% assign genre_list = genre_list | push: clean_tag %}
+  {% endfor %}
+{% endif %}
 
 <script type="application/ld+json">
 {
@@ -48,10 +62,12 @@
     "@type": "Book",
     "name": {{ page.title | jsonify }}
     {% if page.cover %},"image": {{ '/assets/' | append: page.cover | absolute_url | jsonify }}{% endif %}
+    {% if genre_list.size > 0 %},"genre": {{ genre_list | jsonify }}{% endif %}
     {% if wd %}
       {% if wd.year %},"datePublished": "{{ wd.year }}"{% endif %}
       {% if book_same_as.size > 0 %},"sameAs": {{ book_same_as | jsonify }}{% endif %}
       {% if award_names.size > 0 %},"award": {{ award_names | jsonify }}{% endif %}
+      {% if wd.series and wd.series != "" %},"isPartOf": {"@type": "BookSeries", "name": {{ wd.series | jsonify }}}{% endif %}
       {% if wd.authors and wd.authors.size > 0 %}
         {% assign a = wd.authors[0] %}
         {% assign author_same_as = "" | split: "" %}
