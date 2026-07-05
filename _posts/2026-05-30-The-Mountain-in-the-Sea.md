@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Mountain in the Sea
-excerpt: 📚 The Mountain in the Sea ✒️ Ray Nayler ✨ 4/5 🛸 First Contact 🖌️ Tomás Almeida
+excerpt: 📚 The Mountain in the Sea ✒️ Ray Nayler (2022) ✨ 4/5 🛸 First Contact 🖌️ Tomás Almeida
 stars: 4
 tags:
   - First_Contact
