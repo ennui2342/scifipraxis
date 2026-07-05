@@ -1,7 +1,7 @@
 ---
 publish: true
 title: There is no Antimemetics Division
-excerpt: 📚 There is no Antimemetics Division ✒️ qntm (Sam Hughes) ✨ 5/5 🛸 Cosmic Horror 🖌️ Sara Bereta
+excerpt: 📚 There is no Antimemetics Division ✒️ qntm / Sam Hughes (2025) ✨ 5/5 🛸 Cosmic Horror 🖌️ Sara Bereta
 stars: 5
 tags:
   - Metaphysical
@@ -10,7 +10,7 @@ tags:
   - Epistolary
 artist: Sara Bereta
 year: 2025
-writer: " qntm (Sam Hughes)"
+writer: qntm (Sam Hughes)
 cover: there-is-no-antimemetics-division.jpg
 header:
   og_image: /assets/there-is-no-antimemetics-division.jpg
